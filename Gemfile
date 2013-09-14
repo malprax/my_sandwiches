@@ -33,6 +33,9 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+group :development do
+  gem 'taps', :require => false # has as sqlite dependency, which heroku hates
+end
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
