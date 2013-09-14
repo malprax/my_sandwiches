@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  date: 1
+  order_quantity: 1
+  bread_type: false
+  sandwiches_type: false
+  pick_up_time: false
+
+two:
+  date: 1
+  order_quantity: 1
+  bread_type: false
+  sandwiches_type: false
+  pick_up_time: false

@@ -1,4 +1,6 @@
 MySandwiches::Application.routes.draw do
+  resources :order_pages
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

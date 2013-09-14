@@ -1,0 +1,37 @@
+<%= form_for(@order_page) do |f| %>
+  <% if @order_page.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@order_page.errors.count, "error") %> prohibited this order_page from being saved:</h2>
+
+      <ul>
+      <% @order_page.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :date %><br>
+    <%= f.number_field :date %>
+  </div>
+  <div class="field">
+    <%= f.label :order_quantity %><br>
+    <%= f.number_field :order_quantity %>
+  </div>
+  <div class="field">
+    <%= f.label :bread_type %><br>
+    <%= f.check_box :bread_type %>
+  </div>
+  <div class="field">
+    <%= f.label :sandwiches_type %><br>
+    <%= f.check_box :sandwiches_type %>
+  </div>
+  <div class="field">
+    <%= f.label :pick_up_time %><br>
+    <%= f.check_box :pick_up_time %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
