@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/seyhunak/twitter-bootstrap-rails.git
-  revision: 40ffd567ee6bea9974710c58646d309d6a95faaf
+  revision: b4ec5166978a0b6ba1596827428fb2e4ffd9565d
   specs:
     twitter-bootstrap-rails (2.2.8)
       actionpack (>= 3.1)
@@ -83,7 +83,7 @@ GEM
     minitest (4.7.5)
     multi_json (1.8.0)
     orm_adapter (0.4.0)
-    pg (0.16.0)
+    pg (0.17.0)
     polyglot (0.3.3)
     rack (1.5.2)
     rack-test (0.6.2)
