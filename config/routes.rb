@@ -1,4 +1,5 @@
 MySandwiches::Application.routes.draw do
+  devise_for :users
   resources :order_pages
   resources :home
 
