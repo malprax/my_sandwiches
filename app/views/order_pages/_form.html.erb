@@ -18,21 +18,31 @@
 
   
   <div class="field">
-    <%= f.label :order_quantity %><br>
-    <%= f.number_field :order_quantity, start_order:1, end_order:100 %>
+    <%= f.label :order_quantity %>
+    <%= f.number_field :order_quantity, start_order:1, end_order:100 %>  
   </div>
+  
   <div class="field">
-    <%= f.label :bread_type %><br>
-    <%= f.check_box :bread_type %>
+        <%= f.label :bread_type %>
+        <%= f.radio_button :bread_type, 1 %> White
+        <%= f.radio_button :bread_type, 2 %> Brown       
   </div>
+  
   <div class="field">
-    <%= f.label :sandwiches_type %><br>
-    <%= f.check_box :sandwiches_type %>
-  </div>
+        <%= f.label :sandwiches_type %>
+        <%= f.radio_button :sandwiches_type, 1 %> Standard
+        <%= f.radio_button :sandwiches_type, 2 %> Own    
+  </div>  
+  
   <div class="field">
-    <%= f.label :pick_up_time %><br>
-    <%= f.check_box :pick_up_time %>
-  </div>
+        <%= f.label :pick_up_time %>
+        <%= radio_button_tag :pick_up_time, 1 %> 11.30 - 12.00
+       <%= radio_button_tag :pick_up_time, 2 %> 12.00 - 12.30
+       <%= radio_button_tag :pick_up_time, 3 %> 12.30 - 13.00
+       <%= radio_button_tag :pick_up_time, 4 %> 13.00 - 13.30
+       <%= radio_button_tag :pick_up_time, 5 %> 13.30 - 14.00    
+  </div>   
+  
   <div class="actions">
     <%= f.submit %>
   </div>
