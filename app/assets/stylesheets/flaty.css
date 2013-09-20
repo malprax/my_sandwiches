@@ -5,6 +5,7 @@ display: block;
 float: left;
 margin: 0 10px 0 0;
 padding-top: 3px;
+
 }
 
 
@@ -12,3 +13,9 @@ padding-top: 3px;
   padding-top: 10px;
   padding-left: 24px;
 }
+
+#body{
+  background-color: #ADFF85;
+}
+
+
