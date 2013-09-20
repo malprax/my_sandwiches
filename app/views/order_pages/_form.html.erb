@@ -10,14 +10,15 @@
       </ul>
     </div>
   <% end %>
-
   <div class="field">
-    <%= f.label :date %><br>
-    <%= f.number_field :date %>
+      <%= f.label :date %><br />
+      <%= f.date_select :date, start_year:Date.today.year , end_year: Date.today.year %>
   </div>
+
+  
   <div class="field">
     <%= f.label :order_quantity %><br>
-    <%= f.number_field :order_quantity %>
+    <%= f.number_field :order_quantity, start_order:1, end_order:100 %>
   </div>
   <div class="field">
     <%= f.label :bread_type %><br>
