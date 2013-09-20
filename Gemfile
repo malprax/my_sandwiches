@@ -44,7 +44,7 @@ gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootst
 
 gem 'devise'
 gem 'cancan'
-gem 'simple_form'
+gem 'simple_form', github: 'plataformatec/simple_form'
 gem 'country_select'
 gem 'carrierwave'
 gem 'rmagick'

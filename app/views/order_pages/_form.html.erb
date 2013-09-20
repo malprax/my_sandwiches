@@ -1,4 +1,4 @@
-<%= form_for(@order_page) do |f| %>
+<%= simple_form_for(@order_page) do |f| %>
   <% if @order_page.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@order_page.errors.count, "error") %> prohibited this order_page from being saved:</h2>
@@ -18,11 +18,19 @@
 
   
   <div class="field">
-    <%= f.label :order_quantity %>
-    <%= f.number_field :order_quantity, start_order:1, end_order:100 %>  
+    <%= f.input :order_quantity, collection:1..10, default:1%>
+   
   </div>
   
   <div class="field">
+    <%#=  f.input :bread_type, 
+              :collection => [[true, 'Private'], [false, 'Public']], 
+              :label_method => :last, 
+              :value_method => :first,
+              :as => :radio_buttons, 
+              :item_wrapper_class => 'inline',
+              :checked => true
+    %>
         <%= f.label :bread_type %>
         <%= f.radio_button :bread_type, 1 %> White
         <%= f.radio_button :bread_type, 2 %> Brown       
