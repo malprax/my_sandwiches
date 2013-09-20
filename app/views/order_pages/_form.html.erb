@@ -11,8 +11,9 @@
     </div>
   <% end %>
   <div class="field">
-      <%= f.label :date %><br />
-      <%= f.date_select :date, start_year:Date.today.year , end_year: Date.today.year %>
+      <%= a.created_at.strftime('%d %b, %Y')%>
+      <%#= f.label :date %><br />
+      <%#= f.date_select :date, start_year:Date.today.year , end_year: Date.today.year %>
   </div>
 
   
