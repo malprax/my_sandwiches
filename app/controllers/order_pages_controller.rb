@@ -1,4 +1,5 @@
 class OrderPagesController < ApplicationController
+  before_action :authenticate_user!, except: [:index, :show]
   before_action :set_order_page, only: [:show, :edit, :update, :destroy]
 
   # GET /order_pages
