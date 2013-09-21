@@ -22,8 +22,8 @@
                 :value_method => :first,                  
                 :item_wrapper_class => 'inline',
                 :checked => true,
-                :default => 1,
-                class: "pik"
+                :default => 1
+               
       %>     
  
       <%= f.input :order_quantity, collection:1..10, default:1, class: "order"%>
@@ -37,8 +37,8 @@
               :value_method => :first,
               :item_wrapper_class => 'inline',
               :checked => true,
-              :default => true,
-                  class: "bt"
+              :default => true
+                 
               
       %>
         
@@ -52,9 +52,69 @@
                   :value_method => :first,
                   :item_wrapper_class => 'inline',
                   :checked => true,
-                  :default => true,
-                  class: "st"
+                  :default => true
+                 
       %>  
+      
+      <%=  f.input :spreads, 
+                  :collection => [[1,'Crab'],[2,'Tuna'],[3,'Cheese'],[4,'Turkey'],[5, 'Scampi'],[6,'Meatballs'],[7,'Porc'],[8,'Fish']], 
+                  :label_method => :last, 
+                  :value_method => :first,
+                  :item_wrapper_class => 'inline',
+                  :checked => true               
+      %>  
+      
+      <%=  f.input :vegetables, 
+                  :collection => [[1,'Salad'],[2,'Tomatoe'],[3,'Onions'],[4,'Carrots'],[5,'Eggs'],[6,'Cucumber']], 
+                  :label_method => :last, 
+                  :value_method => :first,
+                  :item_wrapper_class => 'inline',
+                  :checked => true             
+      %>  
+      
+      <%=  f.input :sauces, 
+                  :collection => [[1, 'Mayo'], [2, 'Ketchup'],[3, 'Moutarde Oil']], 
+                  :label_method => :last, 
+                  :value_method => :first,
+                  :item_wrapper_class => 'inline',
+                  :checked => true               
+      %> 
+       
+      
+      <h2>Confirm Information</h2>
+        <p>
+          <strong>Order Date:</strong>
+          <%= h @order.shipping_name %>
+        </p>
+        <p>
+          <strong>Pick Up:</strong>
+          <%= h @order.billing_name %>
+        </p>
+        <p>
+          <strong>Quantity:</strong>
+          <%= h @order.shipping_name %>
+        </p>
+        <p>
+          <strong>Bread Type:</strong>
+          <%= h @order.billing_name %>
+        </p>
+        <p>
+          <strong>Sandwiches Type:</strong>
+          <%= h @order.shipping_name %>
+        </p>
+        <p>
+          <strong>Spreads:</strong>
+          <%= h @order.billing_name %>
+        </p>
+        <p>
+          <strong>Vegetables:</strong>
+          <%= h @order.billing_name %>
+        </p>
+        <p>
+          <strong>Sauces:</strong>
+          <%= h @order.billing_name %>
+        </p>
+      
   
   
       
