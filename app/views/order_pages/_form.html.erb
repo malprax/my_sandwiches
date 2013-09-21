@@ -16,14 +16,22 @@
       <%#= f.date_select :date, start_year:Date.today.year , end_year: Date.today.year %>
   
 
-  
+      <%=  f.input :pick_up_time, 
+                :collection => [[1, '11.30 - 12.00'], [2, '12.00 - 12.30'],[3, '12.30 - 13.00'],[4, '13.00 - 13.30'],[5, '13.30 - 14.00']], 
+                :label_method => :last, 
+                :value_method => :first,                  
+                :item_wrapper_class => 'inline',
+                :checked => true,
+                :default => 1,
+                class: "pik"
+      %>     
  
-    <%= f.input :order_quantity, collection:1..10, default:1, class: "order"%>
+      <%= f.input :order_quantity, collection:1..10, default:1, class: "order"%>
    
   
   
   
-    <%=  f.input :bread_type, 
+      <%=  f.input :bread_type, 
               :collection => [[true, 'White'], [false, 'Brown']], 
               :label_method => :last, 
               :value_method => :first,
@@ -32,13 +40,13 @@
               :default => true,
                   class: "bt"
               
-    %>
+      %>
         
   
   
  
        
-        <%=  f.input :sandwiches_type, 
+      <%=  f.input :sandwiches_type, 
                   :collection => [[true, 'Standard'], [false, 'Own ']], 
                   :label_method => :last, 
                   :value_method => :first,
@@ -46,19 +54,11 @@
                   :checked => true,
                   :default => true,
                   class: "st"
-        %>  
+      %>  
   
   
       
-       <%=  f.input :pick_up_time, 
-                 :collection => [[1, '11.30 - 12.00'], [2, '12.00 - 12.30'],[3, '12.30 - 13.00'],[4, '13.00 - 13.30'],[5, '13.30 - 14.00']], 
-                 :label_method => :last, 
-                 :value_method => :first,                  
-                 :item_wrapper_class => 'inline',
-                 :checked => true,
-                 :default => 1,
-                 class: "pik"
-       %>     
+       
    
   
   
