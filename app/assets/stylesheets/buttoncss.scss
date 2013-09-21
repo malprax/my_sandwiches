@@ -21,6 +21,11 @@ Button {
     
     text-shadow:0px 1px 0px #5b8a3c;
     
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    
 }
 Button:hover {
   color:#FFFFFF;
@@ -45,6 +50,11 @@ Button:hover {
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#72b352', endColorstr='#77b55a',GradientType=0);
     
     background-color:#72b352;
+    
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 Button:active {
     position:relative;

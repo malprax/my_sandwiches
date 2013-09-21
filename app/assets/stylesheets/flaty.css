@@ -61,10 +61,12 @@ border-radius: 4px;
 -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
 -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
 box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+
 -webkit-transition: all 0.2s ease-in-out;
 -moz-transition: all 0.2s ease-in-out;
 -o-transition: all 0.2s ease-in-out;
 transition: all 0.2s ease-in-out;
+
 }
 
 .thumbnail:hover{
@@ -83,11 +85,10 @@ box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
 -moz-transition: all 0.8s ease-in-out;
 -o-transition: all 0.8s ease-in-out;
 transition: all 0.8s ease-in-out;
+
 background-image: linear-gradient(to bottom, #F0ECBC, #f2f2f2);
--webkit-transition: all 0.8s ease-in-out;
--moz-transition: all 0.8s ease-in-out;
--o-transition: all 0.8s ease-in-out;
-transition: all 0.8s ease-in-out;
+
+
 }
 
 .navbar .nav>li>a {

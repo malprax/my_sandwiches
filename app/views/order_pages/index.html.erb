@@ -1,6 +1,6 @@
-<h1>Listing order_pages</h1>
+<h1>Listing Order</h1>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Date</th>
@@ -17,10 +17,10 @@
   <tbody>
     <% @order_pages.each do |order_page| %>
       <tr>
-        <td><%= order_page.date %></td>
+        <td><%= order_page.created_at.strftime('%d %b, %Y') %></td>
         <td><%= order_page.order_quantity %></td>
-        <td><%= order_page.bread_type %></td>
-        <td><%= order_page.sandwiches_type %></td>
+        <td><%= order_page.bread_type == true ? "White" : "Brown" %></td>
+        <td><%= order_page.sandwiches_type == true ? "Standard" : "Own"  %></td>
         <td><%= order_page.pick_up_time %></td>
         <td><%= link_to 'Show', order_page %></td>
         <td><%= link_to 'Edit', edit_order_page_path(order_page) %></td>

@@ -12,12 +12,12 @@
 
 <p>
   <strong>Bread type:</strong>
-  <%= @order_page.bread_type %>
+  <%= @order_page.bread_type == true ? "White" : "Brown"%>
 </p>
 
 <p>
   <strong>Sandwiches type:</strong>
-  <%= @order_page.sandwiches_type %>
+  <%= @order_page.sandwiches_type == true ? "Standard" : "Own" %>
 </p>
 
 <p>
