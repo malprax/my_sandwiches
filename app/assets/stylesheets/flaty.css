@@ -62,10 +62,15 @@ border-radius: 4px;
 -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
 box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
 
+
+background-image: linear-gradient(to bottom, #FFFFFF, #f2f2f2);
+
 -webkit-transition: all 0.2s ease-in-out;
 -moz-transition: all 0.2s ease-in-out;
 -o-transition: all 0.2s ease-in-out;
 transition: all 0.2s ease-in-out;
+
+
 
 }
 
@@ -75,18 +80,23 @@ padding-top:5px;
 padding-bottom: 20px;
 line-height: 20px;
 border: 1px solid #229734;
+
 -webkit-border-radius: 4px;
 -moz-border-radius: 4px;
 border-radius: 4px;
+
 -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
 -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
 box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+
+background-image: linear-gradient(to bottom, #F0ECBC, #f2f2f2);
+
+
 -webkit-transition: all 0.8s ease-in-out;
 -moz-transition: all 0.8s ease-in-out;
 -o-transition: all 0.8s ease-in-out;
 transition: all 0.8s ease-in-out;
 
-background-image: linear-gradient(to bottom, #F0ECBC, #f2f2f2);
 
 
 }
