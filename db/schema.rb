@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130920103636) do
+ActiveRecord::Schema.define(version: 20130921222726) do
 
   create_table "order_pages", force: true do |t|
     t.integer  "date"
@@ -21,6 +21,8 @@ ActiveRecord::Schema.define(version: 20130920103636) do
     t.boolean  "pick_up_time"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "spreads"
+    t.integer  "quantity"
   end
 
   create_table "users", force: true do |t|
