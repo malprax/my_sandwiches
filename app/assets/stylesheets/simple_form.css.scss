@@ -1,0 +1,43 @@
+
+
+.simple_form {
+  $indent: 120px;
+  label{float: left;
+    padding-right:40px;
+    margin: 0px 0px 15px 0px;
+  }
+  
+ 
+      
+  select {
+  margin-left: 40px;
+  width: 120px;
+  border: 1px solid #030303;  
+  background-color: #D9F8CF;
+   }
+   
+   #order_page_order_quantity{
+     margin-left:29px;
+     margin-bottom: 35px;
+   }
+   
+   #order_page_bread_type{
+     margin-left:49px;
+     margin-bottom: 35px;
+   }
+   
+   #order_page_sandwiches_type{
+     margin-left:11px;
+     margin-bottom: 35px;
+   }
+   #order_page_pick_up_time{
+     margin-left:40px;
+     margin-bottom: 35px;
+   }
+  
+}
+
+.btn{
+  margin-left: 155px;
+}
+
