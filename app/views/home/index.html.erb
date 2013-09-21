@@ -1,6 +1,6 @@
 <div class="hero">
   
-  <center><h1>Our Favourite Menu</h1></center>
+  <center><h3>Our Favourite Menu</h3></center>
   <div class="row-fluid">
     <ul class="thumbnails">
       <li class="span4">
@@ -11,7 +11,7 @@
 
 </p></center>
           
-            <center><%= link_to 'Order Now!', new_order_page_path %>  </center> 
+            <center> <%= link_to '<button>Order Now!</button>'.html_safe, new_order_page_path%> </center> 
         </div>
       </li>
       <li class="span4">
@@ -23,7 +23,7 @@
 
 </p></center>
          
-          <center><%= link_to 'Order Now!', new_order_page_path %>  </center>
+          <center> <%= link_to '<button>Order Now!</button>'.html_safe, new_order_page_path%> </center>
         </div>
       </li>
       <li class="span4">
@@ -34,7 +34,11 @@
            <center><p class="tumb">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 
 </p></center>
-            <center><%= link_to 'Order Now!', new_order_page_path %>  </center>  
+           <center>
+             <%= link_to '<button>Order Now!</button>'.html_safe, new_order_page_path%> 
+           </center>
+              
+             
         </div>
       </li>
       

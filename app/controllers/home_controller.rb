@@ -1,3 +1,9 @@
 class HomeController < ApplicationController
-   @order_pages = OrderPage.all
+  
+   
+   def index
+     @order_pages = OrderPage.all
+     @order_page = OrderPage.new
+   end
+   
 end
