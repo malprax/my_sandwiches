@@ -14,9 +14,7 @@
                
       %>     
  
-      <%= f.input :order_quantity, collection:1..10, default:1, class: "order"%>
-   
-  
+      <%= f.input :order_quantity, collection:1..10, default:1, class: "order"%> 
   
   
       <%=  f.input :bread_type, 
@@ -25,24 +23,18 @@
               :value_method => :first,
               :item_wrapper_class => 'inline',
               :checked => true,
-              :default => true
-                 
+              :default => true           
               
       %>
-        
-  
-  
- 
        
       <%=  f.input :sandwiches_type, 
                   :collection => [[true, 'Standard'], [false, 'Own ']], 
                   :label_method => :last, 
                   :value_method => :first,
-                  :item_wrapper_class => 'inline',
-                  :checked => true,
-                  :default => true,
+                  :item_wrapper_class => 'inline',                  
                   :as => :radio_buttons,
-                  :input_html => {:name => "sand"}    
+                   :checked => true,                       
+                  :input_html => {:name => "gmail"}    
                  
       %>  
       

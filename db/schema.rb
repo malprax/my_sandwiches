@@ -14,16 +14,15 @@
 ActiveRecord::Schema.define(version: 20130921222726) do
 
   create_table "order_pages", force: true do |t|
-    t.integer  "date"
     t.integer  "order_quantity"
     t.boolean  "bread_type"
     t.boolean  "sandwiches_type"
     t.boolean  "pick_up_time"
+    t.boolean  "spreads"
+    t.boolean  "vegetables"
+    t.boolean  "sauces"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "spreads"
-    t.string   "vegetables"
-    t.string   "sauces"
   end
 
   create_table "users", force: true do |t|
