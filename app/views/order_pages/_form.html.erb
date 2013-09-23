@@ -1,13 +1,13 @@
 <%= simple_form_for(@order_page) do |f| %>
-  <%= render :partial => 'error_message' %>
+  <%= render :partial => 'error_message', :locals => {:f => f} %>
 
-  <%= render :partial => 'general_order' %>
+  <%= render :partial => 'general_order', :locals => {:f => f} %>
 
-  <%= render :partial => 'standard_sandwiches' %>
+  <%= render :partial => 'standard_sandwiches', :locals => {:f => f} %>
       
-  <%= render :partial => 'own_sandwiches' %>       
+  <%= render :partial => 'own_sandwiches', :locals => {:f => f} %>       
       
-  <%= render :partial => 'confirm_order' %>
+  <%= render :partial => 'confirm_order', :locals => {:f => f} %>
         
   <%= f.button :submit, label= "Check Out", class:"btn btn-primary" %>
   
