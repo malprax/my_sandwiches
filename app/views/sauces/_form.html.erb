@@ -1,0 +1,12 @@
+<%= simple_form_for(@sauce) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="inputs">
+    <%= f.input :item %>
+    <%= f.input :price %>
+  </div>
+
+  <div class="actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

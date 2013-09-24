@@ -1,0 +1,13 @@
+<%= simple_form_for(@spread) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="inputs">
+    <%= f.input :item %>
+    <%= f.input :price %>
+    <%= f.input :quantity %>
+  </div>
+
+  <div class="actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
