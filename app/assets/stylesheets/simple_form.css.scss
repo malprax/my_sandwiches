@@ -1,10 +1,11 @@
 
 
-.simple_form {
+.field{
   $indent: 120px;
   label{float: left;
     padding-right:40px;
-    margin: 0px 0px 15px 0px;
+    margin: 20px 0px 30px 0px;
+    text-align: right;
   }
   
  
@@ -16,22 +17,45 @@
   background-color: #D9F8CF;
    }
    
+   #order_page_pick_up_time{
+     margin-left:40px;
+     margin-bottom: 35px;
+   }
+   
    #order_page_order_quantity{
      margin-left:29px;
      margin-bottom: 35px;
    }
    
    #order_page_bread_type{
+     margin-top:15px;
      margin-left:49px;
      margin-bottom: 35px;
    }
    
-   #order_page_sandwiches_type{
-     margin-left:11px;
+   #order_page_sandwiches_type {
+   margin-top: 15px;
+   margin-left: 10px;
+   margin-bottom: 35px;
+   }
+   
+   
+   
+   #order_page_spreads{
+     margin-top: 15px;
+     margin-left:62px;
      margin-bottom: 35px;
    }
-   #order_page_pick_up_time{
-     margin-left:40px;
+   
+   #order_page_vegetables{
+     margin-top: 15px;
+     margin-left:46px;
+     margin-bottom: 35px;
+   }
+   
+   #order_page_sauces{
+     margin-top: 15px;
+     margin-left:68px;
      margin-bottom: 35px;
    }
   

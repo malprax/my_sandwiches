@@ -1,14 +1,97 @@
-<%= simple_form_for(@order_page) do |f| %>
-  <%= render :partial => 'error_message', :locals => {:f => f} %>
+<%= form_for(@order_page) do |f| %>
+  <% if @order_page.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@order_page.errors.count, "error") %> prohibited this order_page from being saved:</h2>
 
-  <%= render :partial => 'general_order', :locals => {:f => f} %>
-
-  <%= render :partial => 'standard_sandwiches', :locals => {:f => f} %>
+      <ul>
+      <% @order_page.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  
+  <div class ="field">
+    Date <%=  Time.now.strftime('%d %b, %Y')%>
+  </div>
       
-  <%= render :partial => 'own_sandwiches', :locals => {:f => f} %>       
+    <div class="field">
+      <%= f.label :pick_up_time %><br>
+       <%= f.select :pick_up_time, [['11.30 - 12.00',1], ['12.00 - 12.30',2],['12.30 - 13.00',3],['13.00 - 13.30',4],['13.30 - 14.00',5]], :checked => true %> 
+         
+    </div>
+    
+    <div class="field">
+      <%= f.label :order_quantity %><br>
+      <%= f.select :order_quantity, ['1','2','3','4','5','6','7','8','9','10']%>
+    </div>
+    
+    <div class="field">
       
-  <%= render :partial => 'confirm_order', :locals => {:f => f} %>
+      <%= f.label :bread_type %>
+      <%= f.select :bread_type, [['White',1],['Brown',1]], :checked => true %>       
+    </div>
+    
+    <div class="field">
+        <%= f.label :sandwiches_type %>
+        <%= f.select :sandwiches_type, [['Standard',1],['Own',1]], :checked => true %>        
+    </div> 
+    
+    <div class="field">
+      <%= f.label :spreads %>
+      <%= f.select :spreads, [['Crab',1],['Tuna',2],['Cheese',3],['Turkey',4],['Scampi',5],['Meatballs',6],['Porc',7],['Fish',8]], :checked => true %> 
+    </div>
+    
+    <div class="field">
+      <%= f.label :vegetables %>
+      <%= f.select :vegetables, [['Salad',1],['Tomato',2],['Onions',3],['Carrots',4],['Eggs',5],['Cucumber',6]], :checked => true %> 
+    </div>
+    
+    <div class="field">
+      <%= f.label :sauces %>
+      <%= f.select :sauces, [['Mayo',1],['Ketchup',2],['Moutarde',3],['Oil',4]], :checked => true %> 
+    </div>
+    
+    
+ 
+  
+  <h2>Confirm Your Order</h2>
+          <p>
+            <strong>Order Date:</strong>
+            <%= h Time.now.strftime('%d %b, %Y') %>
+          </p>
+          <p>
+            <strong>Pick Up:</strong>
+            <%#= h @order.billing_name %>
+          </p>
+          <p>
+            <strong>Quantity:</strong>
+            <%#= h @order.shipping_name %>
+          </p>
+          <p>
+            <strong>Bread Type:</strong>
+            <%#= h @order.billing_name %>
+          </p>
+          <p>
+            <strong>Sandwiches Type:</strong>
+            <%#= h @order.shipping_name %>
+          </p>
+          <p>
+            <strong>Spreads:</strong>
+            <%#= h @order.billing_name %>
+          </p>
+          <p>
+            <strong>Vegetables:</strong>
+            <%#= h @order.billing_name %>
+          </p>
+          <p>
+            <strong>Sauces:</strong>
+            <%#= h @order.billing_name %>
+          </p>      
+      
+ 
         
-  <!-- <%= f.button :submit, label= "Check Out", class:"btn btn-primary" %> -->
+  <%= f.submit%>
   
 <% end %>
