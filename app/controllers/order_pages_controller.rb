@@ -6,6 +6,7 @@ class OrderPagesController < ApplicationController
   # GET /order_pages.json
   def index
     @order_pages = OrderPage.all
+    
   end
 
   # GET /order_pages/1

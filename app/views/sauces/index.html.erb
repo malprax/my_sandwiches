@@ -1,6 +1,11 @@
 <h1>Listing sauces</h1>
 
-<table>
+ <% @sauces.each do |sauce| %>
+   <%= simple_form for sauce do |f| %>
+   <%end %>
+ 
+ <% end %>
+<table class="table">
   <thead>
     <tr>
       <th>Item</th>
