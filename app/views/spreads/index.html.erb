@@ -1,11 +1,12 @@
 <h1>Listing spreads</h1>
 
-<table class="table">
+<table>
   <thead>
     <tr>
       <th>Item</th>
-      <th>Price</th>
       <th>Quantity</th>
+      <th>Item price</th>
+      <th>Unit price</th>
       <th></th>
       <th></th>
       <th></th>
@@ -16,8 +17,9 @@
     <% @spreads.each do |spread| %>
       <tr>
         <td><%= spread.item %></td>
-        <td><%= spread.price %></td>
         <td><%= spread.quantity %></td>
+        <td><%= spread.item_price %></td>
+        <td><%= spread.unit_price %></td>
         <td><%= link_to 'Show', spread %></td>
         <td><%= link_to 'Edit', edit_spread_path(spread) %></td>
         <td><%= link_to 'Destroy', spread, method: :delete, data: { confirm: 'Are you sure?' } %></td>

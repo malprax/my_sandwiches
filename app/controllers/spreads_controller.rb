@@ -69,6 +69,6 @@ class SpreadsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def spread_params
-      params.require(:spread).permit(:item, :price, :quantity)
+      params.require(:spread).permit(:item, :quantity, :item_price, :unit_price)
     end
 end

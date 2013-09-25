@@ -2,10 +2,12 @@
 
 one:
   item: MyString
-  price: MyString
-  quantity: MyString
+  quantity: 1
+  item_price: 1
+  unit_price: 1
 
 two:
   item: MyString
-  price: MyString
-  quantity: MyString
+  quantity: 1
+  item_price: 1
+  unit_price: 1

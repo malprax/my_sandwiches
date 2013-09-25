@@ -1,16 +1,7 @@
 MySandwiches::Application.routes.draw do
-  resources :order_pages 
-  resources :order_qties
-
-  resources :pickups
-
-  resources :bread_types
-
-  resources :sauces
-
   resources :spreads
 
-  resources :vegetables
+  resources :order_pages   
   devise_for :users
   resources :home
 

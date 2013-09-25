@@ -1,9 +1,10 @@
 class CreateSpreads < ActiveRecord::Migration
   def change
     create_table :spreads do |t|
-      t.boolean :item
-      t.integer :price
+      t.string :item
       t.integer :quantity
+      t.integer :item_price
+      t.integer :unit_price
 
       t.timestamps
     end

@@ -18,7 +18,7 @@ class SpreadsControllerTest < ActionController::TestCase
 
   test "should create spread" do
     assert_difference('Spread.count') do
-      post :create, spread: { item: @spread.item, price: @spread.price, quantity: @spread.quantity }
+      post :create, spread: { item: @spread.item, item_price: @spread.item_price, quantity: @spread.quantity, unit_price: @spread.unit_price }
     end
 
     assert_redirected_to spread_path(assigns(:spread))
@@ -35,7 +35,7 @@ class SpreadsControllerTest < ActionController::TestCase
   end
 
   test "should update spread" do
-    patch :update, id: @spread, spread: { item: @spread.item, price: @spread.price, quantity: @spread.quantity }
+    patch :update, id: @spread, spread: { item: @spread.item, item_price: @spread.item_price, quantity: @spread.quantity, unit_price: @spread.unit_price }
     assert_redirected_to spread_path(assigns(:spread))
   end
 
