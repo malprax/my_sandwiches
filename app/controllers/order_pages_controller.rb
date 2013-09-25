@@ -1,5 +1,5 @@
 class OrderPagesController < ApplicationController
-  before_action :authenticate_user!, except: [:index, :show]
+  # before_action :authenticate_user!, except: [:index, :show]
   before_action :set_order_page, only: [:show, :edit, :update, :destroy]
 
   # GET /order_pages
@@ -71,6 +71,6 @@ class OrderPagesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def order_page_params
-      params.require(:order_page).permit(:order_quantity, :bread_type, :sandwiches_type, :pick_up_time)
+      params.require(:order_page).permit(:order_quantity, :bread_type, :sandwiches_type, :pick_up_time, :vegetables, :spreads, :sauces)
     end
 end

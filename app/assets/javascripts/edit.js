@@ -1,5 +1,5 @@
-$(document).ready(function() {
-  $(".order_page_sauces").hide();
+// $(document).ready(function() {
+//   $(".order_page_sauces").hide();
   // $(".order_page_vegetables").hide();
  //  $("h2").text("").hide();
  //  $("input[name=gmail]").click(function() {

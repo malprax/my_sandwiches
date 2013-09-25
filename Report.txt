@@ -1,0 +1,41 @@
+Well My Friends This is Wednesday and your website not finish yet. It's okay if you fire me and you don't have to pay me. But i must give you the report of your progress website to tell the another programmer if you hire someone. 
+
+
+Your website divide into two develope job:
+1. Front End Develope:
+   a).Responsive design with twitter bootstrap
+      Now your website can open in PC computer, Laptop, Tabs, and       Smartphone      
+   b).Javascript to present multistep form order. 
+   c).Styling, Colouring, and positioning all attribute like            button, form field, navigation, etc
+   
+   
+2.  Backend Develope:
+   a) Email authentification
+   b) Random Badge Number
+   c) Type of User To Login: Staff or Customer User
+   d) Session User To Order
+   e) Form Order without multistep form
+   f) Relation Has Many To Many Database for stock:
+        1.User Database
+        2.User_Order Database
+        3.Pickup Time Schedule Database
+        4.Bread_type Database
+        5.Sandwich Type Database
+        6.Spreads Stock Database
+        7.Vegetables Stock Database
+        8.Sauces Stock Database
+   g) Confirmation Total Cost Report
+   h) Caterer Page To See order received and confirmation send to        client 
+   i) Print Out Order Report With Converting To Excel
+   
+   
+   My Progress:
+   I'm not finish yet to make point b) In front develope and point e) In Backend Developer. But i was skip to the next point. that's way you didn't see the form order well in views.
+   
+   Best Regards
+   
+   Aulia Sabril
+   
+   
+   
+        

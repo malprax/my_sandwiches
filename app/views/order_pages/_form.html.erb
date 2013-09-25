@@ -35,7 +35,7 @@
     
     <div class="field">
         <%= f.label :sandwiches_type %>
-        <%= f.select :sandwiches_type, [['Standard',1],['Own',1]], :checked => true %>        
+        <%= f.select :sandwiches_type,[['Standard',1],['Own',1]], :checked => true, :input_html=>{:id => 'gori', :name => 'sandis'} %>        
     </div> 
     
     <div class="field">
