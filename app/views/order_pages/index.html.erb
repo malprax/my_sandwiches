@@ -19,9 +19,9 @@
       <tr>
         <td><%= order_page.created_at.strftime('%d %b, %Y') %></td>
         <td><%= order_page.order_quantity %></td>
-        <td><%= order_page.bread_type == true ? "White" : "Brown" %></td>
-        <td><%= order_page.sandwiches_type == true ? "Standard" : "Own"  %></td>
-        <td><%= order_page.pick_up_time %></td>
+        <td><%= order_page.bread_type_id == true ? "Brown" : "White" %></td>
+        <td><%#= order_page.sandwiches_type == true ? "Standard" : "Own"  %></td>
+        <td><%#= order_page.pick_up_time %></td>
         <td><%= link_to 'Show', order_page %></td>
         <td><%= link_to 'Edit', edit_order_page_path(order_page) %></td>
         <td><%= link_to 'Destroy', order_page, method: :delete, data: { confirm: 'Are you sure?' } %></td>

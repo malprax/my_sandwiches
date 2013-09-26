@@ -1,4 +1,4 @@
-<%= simple_form_for(@order_page) do |f| %>
+<%= form_for(@order_page) do |f| %>
   <% if @order_page.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@order_page.errors.count, "error") %> prohibited this order_page from being saved:</h2>
@@ -10,13 +10,18 @@
       </ul>
     </div>
   <% end %>
+  
+  <div class="field">
+    <%= f.label :bread_type_id %><br />
+            <%= f.collection_select :bread_type_id, BreadType.order("name"), :id, :name %>
+  </div>
  
       Date <%=  Time.now.strftime('%d %b, %Y')%>
       <%#= f.label :date %><br />
       <%#= f.date_select :date, start_year:Date.today.year , end_year: Date.today.year %>
   
 
-      <%=  f.input :pick_up_time, 
+      <%#=  f.input :pick_up_time, 
                 :collection => [[1, '11.30 - 12.00'], [2, '12.00 - 12.30'],[3, '12.30 - 13.00'],[4, '13.00 - 13.30'],[5, '13.30 - 14.00']], 
                 :label_method => :last, 
                 :value_method => :first,                  
@@ -26,13 +31,13 @@
                
       %>     
  
-      <%= f.input :order_quantity, collection:1..10, default:1, class: "order"%>
+      <%#= f.input :order_quantity, collection:1..10, default:1, class: "order"%>
    
   
   
   
-      <%=  f.input :bread_type, 
-              :collection => [[true, 'White'], [false, 'Brown']], 
+      <%#=  f.input :bread_type_id, 
+              :collection => :bread_type_id, BreadType.order("name"), :id, :name,
               :label_method => :last, 
               :value_method => :first,
               :item_wrapper_class => 'inline',
@@ -46,7 +51,7 @@
   
  
        
-      <%=  f.input :sandwiches_type, 
+      <%#=  f.input :sandwiches_type, 
                   :collection => [[true, 'Standard'], [false, 'Own ']], 
                   :label_method => :last, 
                   :value_method => :first,
@@ -56,7 +61,7 @@
                  
       %>  
       
-      <%=  f.input :spreads, 
+      <%#=  f.input :spreads, 
                   :collection => [[1,'Crab'],[2,'Tuna'],[3,'Cheese'],[4,'Turkey'],[5, 'Scampi'],[6,'Meatballs'],[7,'Porc'],[8,'Fish']], 
                   :label_method => :last, 
                   :value_method => :first,
@@ -64,7 +69,7 @@
                   :checked => true               
       %>  
       
-      <%=  f.input :vegetables, 
+      <%#=  f.input :vegetables, 
                   :collection => [[1,'Salad'],[2,'Tomatoe'],[3,'Onions'],[4,'Carrots'],[5,'Eggs'],[6,'Cucumber']], 
                   :label_method => :last, 
                   :value_method => :first,
@@ -72,7 +77,7 @@
                   :checked => true             
       %>  
       
-      <%=  f.input :sauces, 
+      <%#=  f.input :sauces, 
                   :collection => [[1, 'Mayo'], [2, 'Ketchup'],[3, 'Moutarde Oil']], 
                   :label_method => :last, 
                   :value_method => :first,
@@ -84,35 +89,35 @@
       <h2>Confirm Information</h2>
         <p>
           <strong>Order Date:</strong>
-          <%= h @order.shipping_name %>
+          <%#= h @order.shipping_name %>
         </p>
         <p>
           <strong>Pick Up:</strong>
-          <%= h @order.billing_name %>
+          <%#= h @order.billing_name %>
         </p>
         <p>
           <strong>Quantity:</strong>
-          <%= h @order.shipping_name %>
+          <%#= h @order.shipping_name %>
         </p>
         <p>
           <strong>Bread Type:</strong>
-          <%= h @order.billing_name %>
+          <%#= h @order.billing_name %>
         </p>
         <p>
           <strong>Sandwiches Type:</strong>
-          <%= h @order.shipping_name %>
+          <%#= h @order.shipping_name %>
         </p>
         <p>
           <strong>Spreads:</strong>
-          <%= h @order.billing_name %>
+          <%#= h @order.billing_name %>
         </p>
         <p>
           <strong>Vegetables:</strong>
-          <%= h @order.billing_name %>
+          <%#= h @order.billing_name %>
         </p>
         <p>
           <strong>Sauces:</strong>
-          <%= h @order.billing_name %>
+          <%#= h @order.billing_name %>
         </p>
       
   
@@ -122,6 +127,9 @@
    
   
   
-    <%= f.button :submit, label= "Check Out", class:"btn btn-primary" %>
+    <%#= f.button :submit, label= "Check Out", class:"btn btn-primary" %>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
   
 <% end %>

@@ -2,7 +2,7 @@
 
 <p>
   <strong>Date:</strong>
-  <%= @order_page.date %>
+  <%#= @order_page.date %>
 </p>
 
 <p>
@@ -12,17 +12,22 @@
 
 <p>
   <strong>Bread type:</strong>
-  <%= @order_page.bread_type == true ? "White" : "Brown"%>
+  <%= @order_page.bread_type.name%>
+</p>
+
+<p>
+  <strong>Cost</strong>
+  <%#= @order_page.bread_type.price %>
 </p>
 
 <p>
   <strong>Sandwiches type:</strong>
-  <%= @order_page.sandwiches_type == true ? "Standard" : "Own" %>
+  <%#= @order_page.sandwiches_type == true ? "Standard" : "Own" %>
 </p>
 
 <p>
   <strong>Pick up time:</strong>
-  <%= @order_page.pick_up_time %>
+  <%#= @order_page.pick_up_time %>
 </p>
 
 <%= link_to 'Edit', edit_order_page_path(@order_page) %> |
