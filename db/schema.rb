@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130926130124) do
+ActiveRecord::Schema.define(version: 20130927032317) do
 
   create_table "bread_types", force: true do |t|
     t.string   "name"
@@ -28,6 +28,17 @@ ActiveRecord::Schema.define(version: 20130926130124) do
     t.integer  "user_id_id"
     t.integer  "bread_type_id"
   end
+
+  add_index "order_pages", ["bread_type_id"], name: "index_order_pages_on_bread_type_id", using: :btree
+
+  create_table "pickuptimes", force: true do |t|
+    t.string   "pickuptime"
+    t.integer  "order_page_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "pickuptimes", ["order_page_id"], name: "index_pickuptimes_on_order_page_id", using: :btree
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false

@@ -12,8 +12,13 @@
   <% end %>
   
   <div class="field">
-    <%= f.label :bread_type_id %><br />
-            <%= f.collection_select :bread_type_id, BreadType.order("name"), :id, :name %>
+    <%= f.label :bread_type_id %>
+    <%= f.collection_select :bread_type_id, BreadType.order("name"), :id, :name  %>
+  </div>
+  
+  <div class="field">
+    <%#= f.label :bread_type_id %><br />
+            <%#= f.collection_select :bread_type_id, BreadType.order("name"), :id, :name %>
   </div>
  
       Date <%=  Time.now.strftime('%d %b, %Y')%>

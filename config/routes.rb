@@ -1,6 +1,11 @@
 MySandwiches::Application.routes.draw do
+  resources :owns
+
+  resources :standards
+
   devise_for :users
-  resources :order_pages
+  resources :order_pages 
+  
   resources :home
 
   # The priority is based upon order of creation: first created -> highest priority.

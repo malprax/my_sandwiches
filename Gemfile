@@ -50,6 +50,12 @@ gem 'carrierwave'
 gem 'rmagick'
 gem 'rails_12factor', group: :production
 
+gem 'protected_attributes'
+gem 'rails-observers'
+gem 'actionpack-page_caching'
+gem 'actionpack-action_caching'
+gem 'activerecord-deprecated_finders'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

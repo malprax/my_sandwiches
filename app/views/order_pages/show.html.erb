@@ -7,13 +7,17 @@
 
 <p>
   <strong>Order quantity:</strong>
-  <%= @order_page.order_quantity %>
+  <%#= @order_page.order_quantity %>
 </p>
+
+<%= form_for([@order_page, @order_page.bread_type]) do |f| %>
 
 <p>
   <strong>Bread type:</strong>
-  <%= @order_page.bread_type.name%>
+  <%= f.name
+  %>
 </p>
+<% end %>
 
 <p>
   <strong>Cost</strong>

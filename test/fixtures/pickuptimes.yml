@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  pickuptime: MyString
+  order_page_id: 
+
+two:
+  pickuptime: MyString
+  order_page_id: 

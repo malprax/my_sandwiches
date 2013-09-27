@@ -1,0 +1,37 @@
+<h1>Listing standards</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Pickuptime1</th>
+      <th>Orderquantity1</th>
+      <th>Breadtype1</th>
+      <th>Spreads1</th>
+      <th>Vegetables1</th>
+      <th>Sauce1</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @standards.each do |standard| %>
+      <tr>
+        <td><%= standard.pickuptime1 %></td>
+        <td><%= standard.orderquantity1 %></td>
+        <td><%= standard.breadtype1 %></td>
+        <td><%= standard.spreads1 %></td>
+        <td><%= standard.vegetables1 %></td>
+        <td><%= standard.sauce1 %></td>
+        <td><%= link_to 'Show', standard %></td>
+        <td><%= link_to 'Edit', edit_standard_path(standard) %></td>
+        <td><%= link_to 'Destroy', standard, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Standard', new_standard_path %>

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  pickuptime2: MyString
+  orderquantity2: 1
+  breadtype2: false
+  spreads2: MyString
+  vegetables2: MyString
+  sauce2: MyString
+
+two:
+  pickuptime2: MyString
+  orderquantity2: 1
+  breadtype2: false
+  spreads2: MyString
+  vegetables2: MyString
+  sauce2: MyString

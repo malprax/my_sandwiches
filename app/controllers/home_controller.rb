@@ -1,5 +1,4 @@
-class HomeController < ApplicationController
-  
+class HomeController < ApplicationController  
    
    def index
      @order_pages = OrderPage.all

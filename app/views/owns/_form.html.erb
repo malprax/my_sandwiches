@@ -1,0 +1,16 @@
+<%= simple_form_for(@own) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="inputs">
+    <%= f.input :pickuptime2 %>
+    <%= f.input :orderquantity2 %>
+    <%= f.input :breadtype2 %>
+    <%= f.input :spreads2 %>
+    <%= f.input :vegetables2 %>
+    <%= f.input :sauce2 %>
+  </div>
+
+  <div class="actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

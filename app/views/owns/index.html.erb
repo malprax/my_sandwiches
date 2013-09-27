@@ -1,0 +1,37 @@
+<h1>Listing owns</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Pickuptime2</th>
+      <th>Orderquantity2</th>
+      <th>Breadtype2</th>
+      <th>Spreads2</th>
+      <th>Vegetables2</th>
+      <th>Sauce2</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @owns.each do |own| %>
+      <tr>
+        <td><%= own.pickuptime2 %></td>
+        <td><%= own.orderquantity2 %></td>
+        <td><%= own.breadtype2 %></td>
+        <td><%= own.spreads2 %></td>
+        <td><%= own.vegetables2 %></td>
+        <td><%= own.sauce2 %></td>
+        <td><%= link_to 'Show', own %></td>
+        <td><%= link_to 'Edit', edit_own_path(own) %></td>
+        <td><%= link_to 'Destroy', own, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Own', new_own_path %>
