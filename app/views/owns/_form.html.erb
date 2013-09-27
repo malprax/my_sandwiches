@@ -2,12 +2,57 @@
   <%= f.error_notification %>
 
   <div class="inputs">
-    <%= f.input :pickuptime2 %>
-    <%= f.input :orderquantity2 %>
-    <%= f.input :breadtype2 %>
-    <%= f.input :spreads2 %>
-    <%= f.input :vegetables2 %>
-    <%= f.input :sauce2 %>
+    
+    <%=  f.input :pickuptime2, 
+              :collection => [[1, '11.30 - 12.00'], [2, '12.00 - 12.30'],[3, '12.30 - 13.00'],[4, '13.00 - 13.30'],[5, '13.30 - 14.00']], 
+              :label_method => :last, 
+              :value_method => :first,                  
+              :item_wrapper_class => 'inline',
+              :checked => true,
+              :default => 1
+             
+    %>    
+   
+    
+    <%= f.input :orderquantity2, collection:1..10, default:1, class: "order"%> 
+  
+    <%=  f.input :breadtype2, 
+            :collection => [[1,'White'],[2,'Brown']],
+            :label_method => :last, 
+            :value_method => :first,
+            :item_wrapper_class => 'inline',
+            :checked => true,
+            :default => true           
+            
+    %>    
+  
+    <%=  f.input :spreads2 , 
+            :collection => [[1,'Crab'],[2,'Tuna'],[3,'Cheese'],[4,'Turkey'],[5,'Scampi'],[6,'Meatballs'],[7,'Porc'],[8,'Fish']],
+            :label_method => :last, 
+            :value_method => :first,
+            :item_wrapper_class => 'inline',
+            :checked => true,
+            :default => true           
+            
+    %>
+    
+    <%=  f.input :vegetables2 , 
+            :collection => [[1,'Salad'],[2,'Tomato'],[3,'Onions'],[4,'Carrots'],[5,'Eggs'],[6,'Tomatoes'],[7,'Cucumber']],
+            :label_method => :last, 
+            :value_method => :first,
+            :item_wrapper_class => 'inline',
+            :checked => true,
+            :default => true           
+            
+    %>
+    <%= f.input :sauce2, :collection => [[1,'Mayo'],[2,'Ketchup'],[3,'Moutarde'],[4,'Oil']],
+            :label_method => :last, 
+            :value_method => :first,
+            :item_wrapper_class => 'inline',
+            :checked => true,
+            :default => true           
+            
+    %> 
   </div>
 
   <div class="actions">

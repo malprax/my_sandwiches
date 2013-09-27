@@ -1,34 +1,26 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Pickuptime1:</strong>
-  <%= @standard.pickuptime1 %>
+  <strong>Pick up time:</strong>
+  <%=  @standard.pickuptime1 %>
 </p>
 
 <p>
-  <strong>Orderquantity1:</strong>
+  <strong>Order quantity:</strong>
   <%= @standard.orderquantity1 %>
 </p>
 
 <p>
-  <strong>Breadtype1:</strong>
+  <strong>Bread type:</strong>
   <%= @standard.breadtype1 %>
 </p>
 
 <p>
-  <strong>Spreads1:</strong>
+  <strong>Spreads:</strong>
   <%= @standard.spreads1 %>
 </p>
 
-<p>
-  <strong>Vegetables1:</strong>
-  <%= @standard.vegetables1 %>
-</p>
 
-<p>
-  <strong>Sauce1:</strong>
-  <%= @standard.sauce1 %>
-</p>
 
 <%= link_to 'Edit', edit_standard_path(@standard) %> |
-<%= link_to 'Back', standards_path %>
+<%= link_to 'Back', home_index_path %>

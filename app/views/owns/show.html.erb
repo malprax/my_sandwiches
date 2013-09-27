@@ -1,34 +1,34 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Pickuptime2:</strong>
-  <%= @own.pickuptime2 %>
+  <strong>Pick up time:</strong>
+  <%= @own.pickuptime2 == true? '11.30 - 12.00' : '12.00 - 12.30' : '12.30 - 13.00' : '13.00 - 13.30' : '13.30 - 14.00' %>
 </p>
 
 <p>
-  <strong>Orderquantity2:</strong>
+  <strong>Order quantity:</strong>
   <%= @own.orderquantity2 %>
 </p>
 
 <p>
-  <strong>Breadtype2:</strong>
+  <strong>Bread type:</strong>
   <%= @own.breadtype2 %>
 </p>
 
 <p>
-  <strong>Spreads2:</strong>
+  <strong>Spreads:</strong>
   <%= @own.spreads2 %>
 </p>
 
 <p>
-  <strong>Vegetables2:</strong>
+  <strong>Vegetables:</strong>
   <%= @own.vegetables2 %>
 </p>
 
 <p>
-  <strong>Sauce2:</strong>
+  <strong>Sauce:</strong>
   <%= @own.sauce2 %>
 </p>
 
 <%= link_to 'Edit', edit_own_path(@own) %> |
-<%= link_to 'Back', owns_path %>
+<%= link_to 'Back', home_index_path %>
