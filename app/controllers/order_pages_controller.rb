@@ -73,6 +73,6 @@ class OrderPagesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def order_page_params
-      params.require(:order_page).permit(:order_quantity, :bread_type_id, :spread_id, :pickup_time)
+      params.require(:order_page).permit(:order_quantity, :bread_type_id, :spread_id, :pickuptime_id)
     end
 end

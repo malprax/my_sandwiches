@@ -18,7 +18,7 @@
   
   <div class="field">   
     <%= f.label :pick_up_time %>
-    <%= f.select :pick_up_time, ['11.30 - 12.00', '12.00 - 12.30', '12.30 - 13.00', '13.00 - 13.30', '13.30 - 14.00'] %>
+    <%= collection_select(:pickuptime_id, Pickuptime.order("pickuptime"), :id, :pickuptime ) %>
      
   </div>
   

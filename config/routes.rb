@@ -5,6 +5,7 @@ MySandwiches::Application.routes.draw do
 
   devise_for :users
   resources :order_pages 
+   match '/order_list' => 'order_pages#index', :as => :order_list, via: :get
   
   resources :home
 
