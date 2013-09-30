@@ -1,3 +1,3 @@
 class Pickuptime < ActiveRecord::Base
-  belongs_to :order_page
+  has_many :order_pages
 end

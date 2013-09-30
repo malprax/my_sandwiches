@@ -1,44 +1,20 @@
 <p id="notice"><%= notice %></p>
 
-<fieldset>
-  <p>
-    <strong>Date:</strong>
-    <%=  Time.now.strftime(' %B %d, %Y')%>
-  </p>
 
-  <p>
-    <strong>Order quantity: <%= @order_page.order_quantity %></strong>
+  <p><strong>Date: <%=  Time.now.strftime(' %B %d, %Y')%></strong></p>
+
+  <p><strong>Order quantity: <%= @order_page.order_quantity %></strong></p>
+
+  <p><strong>Bread type: <%= @order_page.bread_type.name %></strong></p>
   
-  </p>
+  <p><strong>Sandwiches type:</strong></p>
 
+  <p><strong>Spread: <%= @order_page.spread.name %></strong></p>
 
+  <p><strong>Cost $<%= @order_page.bread_type.price + @order_page.spread.price %></strong></p>
 
-  <p>
-    <strong>Bread type: <%= @order_page.bread_type.name %></strong>  
+  <p><strong>Pick up time:</strong></p>
   
-  </p>
-
-  <p>
-    <strong>Spread: <%= @order_page.spread.name %></strong>  
-  
-  </p>
-
-  <p>
-    <strong>Cost $<%= @order_page.bread_type.price + @order_page.spread.price %></strong>
-  
-  </p>
-
-  <p>
-    <strong>Sandwiches type:</strong>
-    <%#= @order_page.sandwiches_type == true ? "Standard" : "Own" %>
-  </p>
-
-  <p>
-    <strong>Pick up time:</strong>
-    <%#= @order_page.pick_up_time %>
-  </p>
-  
-</fieldset>
 <%= link_to '<button>Edit</button>'.html_safe, edit_order_page_path(@order_page) %> 
 <%=link_to '<button>Confirm</button> '.html_safe, order_pages_path%>
 
