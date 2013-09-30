@@ -7,11 +7,11 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 #Create Pickup Time
-11.30 - 12.00 = Pickuptime.create!(pickuptime:'11.30 - 12.00')
-12.00 - 12.30 = Pickuptime.create!(pickuptime:'12.00 - 12.30')
-12.30 - 13.00 = Pickuptime.create!(pickuptime:'12.30 - 13.00')
-13.00 - 13.30 = Pickuptime.create!(pickuptime:'13.00 - 13.30')
-13.30 - 14.00 = Pickuptime.create!(pickuptime:'13.30 - 14.00')
+time1 = Pickuptime.create!(pickuptime:'11.30 - 12.00')
+time2 = Pickuptime.create!(pickuptime:'12.00 - 12.30')
+time3 = Pickuptime.create!(pickuptime:'12.30 - 13.00')
+time4 = Pickuptime.create!(pickuptime:'13.00 - 13.30')
+time5 = Pickuptime.create!(pickuptime:'13.30 - 14.00')
 
 #create Spread
 crab = Spread.create!(name: "Crab", price: 20)
