@@ -47,7 +47,7 @@ class OrderPagesController < ApplicationController
   def update
     respond_to do |format|
       if @order_page.update(order_page_params)
-        format.html { redirect_to @order_page, notice: 'Order page was successfully updated.' }
+        format.html { redirect_to order_page_path, notice: 'Order page was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: 'edit' }
@@ -74,6 +74,6 @@ class OrderPagesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def order_page_params
-      params.require(:order_page).permit(:order_quantity, :bread_type_id, :spread_id, :pickuptime_id)
+      params.require(:order_page).permit(:pickuptime_id, :order_quantity, :bread_type_id, :sandwich_type, :spread_id,  :vegetable_id, :sauce_id, :user_id)
     end
 end

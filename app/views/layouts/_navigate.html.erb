@@ -18,7 +18,7 @@
             <li><%=link_to '<i class="icon-star"></i> About Us'.html_safe, "#"%></li> 
             
             <%if user_signed_in? %>
-              <% if can? :show, OrderPage %>
+              <% if can? :show, order_list_path %>
             <li><%=link_to '<i class="icon-tasks"></i> Order List'.html_safe, order_list_path%></li>     
              <% end %>
             <% end %>

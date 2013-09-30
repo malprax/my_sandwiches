@@ -4,6 +4,7 @@
   <thead>
     <tr>
       <th>No</th>
+  
       <th>Date</th>
       <th>Pick up time</th>
       <th>Order quantity</th>
@@ -23,6 +24,7 @@
     <% @order_pages.each_with_index do |order_page, i| %>
       <tr>
         <td><%= i+1 %></td>
+        
         <td><%= order_page.created_at.strftime('%d %b, %Y') %></td>
         <td><%#= order_page.pickuptime.pickuptime %></td>
         <td><%= order_page.order_quantity %></td>

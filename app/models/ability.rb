@@ -4,7 +4,14 @@ class Ability
   def initialize(user)
     
     if user.role_id == 1
-      can :manage, :all   
+      can :manage, :all 
+    else
+      
+      can :create, OrderPage
+      can :read, OrderPage
+      can :show, OrderPage
+      can :edit, OrderPage 
+       
     end
     
     # Define abilities for the passed in user here. For example:

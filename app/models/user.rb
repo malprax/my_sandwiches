@@ -6,5 +6,5 @@ class User < ActiveRecord::Base
          
   belongs_to :role         
   attr_accessible :email, :password, :password_confirmation, :role_id
- 
+  has_many :order_pages
 end

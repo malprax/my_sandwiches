@@ -1,11 +1,8 @@
 MySandwiches::Application.routes.draw do
-  resources :owns
-
-  resources :standards
-
   devise_for :users
-  resources :order_pages 
-   match '/order_list' => 'order_pages#index', :as => :order_list, via: :get
+  resources :order_pages
+  resources :admin 
+   match '/order_list' => 'admin#order', :as => :order_list, via: :get
   
   resources :home
 
