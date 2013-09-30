@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 20130930050624) do
     t.integer  "spread_id"
     t.integer  "vegetable_id"
     t.integer  "sauce_id"
+    t.boolean  "sandwich_type"
     t.integer  "order_quantity"
     t.datetime "created_at"
     t.datetime "updated_at"
