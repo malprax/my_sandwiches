@@ -40,6 +40,25 @@ ActiveRecord::Schema.define(version: 20130930073936) do
   add_index "order_pages", ["user_id"], name: "index_order_pages_on_user_id", using: :btree
   add_index "order_pages", ["vegetable_id"], name: "index_order_pages_on_vegetable_id", using: :btree
 
+  create_table "original_sandwiches", force: true do |t|
+    t.string   "quantity"
+    t.string   "spreads"
+    t.string   "price"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "order_pages_id"
+  end
+
+  create_table "own_sandwiches", force: true do |t|
+    t.string   "spreads"
+    t.string   "vegetables"
+    t.string   "sauce"
+    t.string   "prices"
+    t.string   "order_pages_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "owns", force: true do |t|
     t.string   "pickuptime2"
     t.integer  "orderquantity2"
