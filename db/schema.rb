@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130930013040) do
+ActiveRecord::Schema.define(version: 20130930050624) do
 
   create_table "bread_types", force: true do |t|
     t.string   "name"
@@ -19,6 +19,25 @@ ActiveRecord::Schema.define(version: 20130930013040) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "order_pages", force: true do |t|
+    t.integer  "user_id"
+    t.integer  "pickuptime_id"
+    t.integer  "bread_type_id"
+    t.integer  "spread_id"
+    t.integer  "vegetable_id"
+    t.integer  "sauce_id"
+    t.integer  "order_quantity"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "order_pages", ["bread_type_id"], name: "index_order_pages_on_bread_type_id", using: :btree
+  add_index "order_pages", ["pickuptime_id"], name: "index_order_pages_on_pickuptime_id", using: :btree
+  add_index "order_pages", ["sauce_id"], name: "index_order_pages_on_sauce_id", using: :btree
+  add_index "order_pages", ["spread_id"], name: "index_order_pages_on_spread_id", using: :btree
+  add_index "order_pages", ["user_id"], name: "index_order_pages_on_user_id", using: :btree
+  add_index "order_pages", ["vegetable_id"], name: "index_order_pages_on_vegetable_id", using: :btree
 
   create_table "owns", force: true do |t|
     t.string   "pickuptime2"
@@ -33,12 +52,16 @@ ActiveRecord::Schema.define(version: 20130930013040) do
 
   create_table "pickuptimes", force: true do |t|
     t.string   "pickuptime"
-    t.integer  "order_page_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  add_index "pickuptimes", ["order_page_id"], name: "index_pickuptimes_on_order_page_id", using: :btree
+  create_table "sauces", force: true do |t|
+    t.string   "name"
+    t.string   "price"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "spreads", force: true do |t|
     t.string   "name"
@@ -76,5 +99,12 @@ ActiveRecord::Schema.define(version: 20130930013040) do
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
+
+  create_table "vegetables", force: true do |t|
+    t.string   "name"
+    t.string   "price"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end
