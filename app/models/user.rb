@@ -4,8 +4,7 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
          
-  attr_accessible :email, :password, :password_confirmation
-  # has_many :order_pages
-#   has_many :bread_types, :through => :order_pages
-#   
+  belongs_to :role         
+  attr_accessible :email, :password, :password_confirmation, :role_id
+ 
 end

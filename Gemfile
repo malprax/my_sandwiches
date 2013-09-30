@@ -56,6 +56,8 @@ gem 'actionpack-page_caching'
 gem 'actionpack-action_caching'
 gem 'activerecord-deprecated_finders'
 
+gem 'cancan'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
