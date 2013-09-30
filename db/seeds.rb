@@ -6,8 +6,9 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
- brown = BreadType.create!(name: "Brown", price: 20)
- white = BreadType.create!(name: "White", price: 30)
+crab = Spread.create!(name: "Crab", price: 20)
+tuna = Spread.create!(name: "Tuna", price: 30)
+ 
 # 
 # user1 = User.create!(email: "kingmalprax@gmail.com",password:"@1603auRIS", password_confirmation:"@1603auRIS" )
 # user1 = User.create!(email: "riskawati@gmail.com",password:"riskaqucantik", password_confirmation:"riskaqucantik" )

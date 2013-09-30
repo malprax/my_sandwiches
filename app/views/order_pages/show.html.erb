@@ -1,38 +1,45 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Date:</strong>
-  <%#= @order_page.date %>
-</p>
+<fieldset>
+  <p>
+    <strong>Date:</strong>
+    <%=  Time.now.strftime(' %B %d, %Y')%>
+  </p>
 
-<p>
-  <strong>Order quantity:</strong>
-  <%#= @order_page.order_quantity %>
-</p>
+  <p>
+    <strong>Order quantity: <%= @order_page.order_quantity %></strong>
+  
+  </p>
 
-<%= form_for([@order_page, @order_page.bread_type]) do |f| %>
 
-<p>
-  <strong>Bread type:</strong>
-  <%= f.name
-  %>
-</p>
-<% end %>
 
-<p>
-  <strong>Cost</strong>
-  <%#= @order_page.bread_type.price %>
-</p>
+  <p>
+    <strong>Bread type: <%= @order_page.bread_type.name %></strong>  
+  
+  </p>
 
-<p>
-  <strong>Sandwiches type:</strong>
-  <%#= @order_page.sandwiches_type == true ? "Standard" : "Own" %>
-</p>
+  <p>
+    <strong>Spread: <%= @order_page.spread.name %></strong>  
+  
+  </p>
 
-<p>
-  <strong>Pick up time:</strong>
-  <%#= @order_page.pick_up_time %>
-</p>
+  <p>
+    <strong>Cost $<%= @order_page.bread_type.price + @order_page.spread.price %></strong>
+  
+  </p>
 
-<%= link_to 'Edit', edit_order_page_path(@order_page) %> |
-<%= link_to 'Back', order_pages_path %>
+  <p>
+    <strong>Sandwiches type:</strong>
+    <%#= @order_page.sandwiches_type == true ? "Standard" : "Own" %>
+  </p>
+
+  <p>
+    <strong>Pick up time:</strong>
+    <%#= @order_page.pick_up_time %>
+  </p>
+  
+</fieldset>
+<%= link_to '<button>Edit</button>'.html_safe, edit_order_page_path(@order_page) %> 
+<%=link_to '<button>Confirm</button> '.html_safe, order_pages_path%>
+
+

@@ -11,10 +11,13 @@ class OrderPagesController < ApplicationController
   # GET /order_pages/1
   # GET /order_pages/1.json
   def show
+    
+
   end
 
   # GET /order_pages/new
   def new
+    
     @order_page = OrderPage.new
   end
 
@@ -70,6 +73,6 @@ class OrderPagesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def order_page_params
-      params.require(:order_page).permit(:order_quantity, :bread_type_id, :pick_up_time)
+      params.require(:order_page).permit(:order_quantity, :bread_type_id, :spread_id, :pick_up_time)
     end
 end
