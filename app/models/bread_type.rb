@@ -1,5 +1,4 @@
-class BreadType < ActiveRecord::Base  
+class BreadType < ActiveRecord::Base
   has_many :order_pages
-  attr_accessible :name, :price
- 
+  attr_accessible :name, :price, dependent: :destroy
 end
