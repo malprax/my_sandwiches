@@ -1,43 +1,49 @@
-.order{
-  $indent: 120px;
-  label{float: left;
-    padding-right:40px;    
-    margin: 6px 0px 25px 0px;
-  }
-  
- 
-      
-  select {
-  margin: 6px 0px 25px 40px;
-  width: 120px;
-  border: 1px solid #030303;  
-  background-color: #D9F8CF;  
-   }
-   
-   #order_page_pickuptime_id{
-     margin-left:40px;
-     margin-bottom: 20px;
-   }
-   
-   #order_page_order_quantity{
-     margin-left:20px;
-     margin-bottom: 20px;
-     padding-top:20px;
-   }
-   
-   #order_page_bread_type_id{
-     margin-left:40px;
-     margin-bottom: 10px;
-   }  
-  
-   
-   #order_page_sandwiches_type{
-     margin-left:11px;
-     margin-bottom: 35px;
-   }
-   
-  
-}
+//.order{
+//  $indent: 120px;
+//  label{float: left;
+//    padding-right:40px;    
+//    margin: 6px 0px 25px 0px;
+//  }
+//  
+// 
+//      
+//  select {
+//  margin: 6px 0px 25px 40px;
+//  width: 120px;
+//  border: 1px solid #030303;  
+//  background-color: #D9F8CF;  
+//   }
+//   
+//   #order_page_pickuptime_id{
+//     margin-left:40px;
+//     margin-bottom: 20px;
+//   }
+//   
+//   #order_page_order_quantity{
+//     margin-left:20px;
+//     margin-bottom: 20px;
+//     padding-top:20px;
+//   }
+//   
+//   #order_page_bread_type_id{
+//     margin-left:40px;
+//     margin-bottom: 40px;
+//   }  
+//  
+//   
+//   #order_page_sandwiches_type{
+//     margin-left:11px;
+//     margin-bottom: 35px;
+//   }
+//   
+//  
+//}
+
+input[type="radio"]{
+margin: 0px 10px 0;
+margin-top: 1px \9;
+padding-bottom:30px;
+line-height: normal;}
 
 .btnform{
       margin: 20px 0px 0px 110px;    
