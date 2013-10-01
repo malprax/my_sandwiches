@@ -7,7 +7,7 @@ class CreateOrderPages < ActiveRecord::Migration
       t.belongs_to :spread
       t.belongs_to :vegetable
       t.belongs_to :sauce       
-      t.boolean :sandwich_type           
+      t.boolean :sandwich_type, default: false           
       t.integer :order_quantity
       t.timestamps
     end

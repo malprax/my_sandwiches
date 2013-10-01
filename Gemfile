@@ -34,8 +34,7 @@ group :doc do
 end
 
 group :development do
-  gem 'taps', :require => false # has as sqlite dependency, which heroku hates
-   gem 'sqlite3'
+  gem 'taps', :require => false # has as sqlite dependency, which heroku hates  
 end
 
 gem "therubyracer"

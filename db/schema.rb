@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(version: 20130930073936) do
     t.integer  "spread_id"
     t.integer  "vegetable_id"
     t.integer  "sauce_id"
-    t.boolean  "sandwich_type"
+    t.boolean  "sandwich_type",  default: false
     t.integer  "order_quantity"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -39,36 +39,6 @@ ActiveRecord::Schema.define(version: 20130930073936) do
   add_index "order_pages", ["spread_id"], name: "index_order_pages_on_spread_id", using: :btree
   add_index "order_pages", ["user_id"], name: "index_order_pages_on_user_id", using: :btree
   add_index "order_pages", ["vegetable_id"], name: "index_order_pages_on_vegetable_id", using: :btree
-
-  create_table "original_sandwiches", force: true do |t|
-    t.string   "quantity"
-    t.string   "spreads"
-    t.string   "price"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "order_pages_id"
-  end
-
-  create_table "own_sandwiches", force: true do |t|
-    t.string   "spreads"
-    t.string   "vegetables"
-    t.string   "sauce"
-    t.string   "prices"
-    t.string   "order_pages_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "owns", force: true do |t|
-    t.string   "pickuptime2"
-    t.integer  "orderquantity2"
-    t.boolean  "breadtype2"
-    t.string   "spreads2"
-    t.string   "vegetables2"
-    t.string   "sauce2"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
 
   create_table "pickuptimes", force: true do |t|
     t.string   "pickuptime"
@@ -84,7 +54,7 @@ ActiveRecord::Schema.define(version: 20130930073936) do
 
   create_table "sauces", force: true do |t|
     t.string   "name"
-    t.string   "price"
+    t.integer   "price"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -92,17 +62,6 @@ ActiveRecord::Schema.define(version: 20130930073936) do
   create_table "spreads", force: true do |t|
     t.string   "name"
     t.integer  "price"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "standards", force: true do |t|
-    t.string   "pickuptime1"
-    t.integer  "orderquantity1"
-    t.boolean  "breadtype1"
-    t.string   "spreads1"
-    t.string   "vegetables1"
-    t.string   "sauce1"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -129,7 +88,7 @@ ActiveRecord::Schema.define(version: 20130930073936) do
 
   create_table "vegetables", force: true do |t|
     t.string   "name"
-    t.string   "price"
+    t.integer  "price"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

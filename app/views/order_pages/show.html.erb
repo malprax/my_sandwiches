@@ -3,7 +3,7 @@
 
   <p><strong>Date: </strong><%=  Time.now.strftime(' %B %d, %Y')%></p>
   
-  
+  <p><strong>User:</strong><%#= @order_page.order_quantity %></p>  
   
   <p><strong>Order quantity: </strong><%= @order_page.order_quantity %></p>
 
@@ -15,11 +15,17 @@
   
   <p><strong>Vegetable: </strong><%= @order_page.vegetable.name %></p>
   
-  <p><strong>Sauce: </strong><%= @order_page.sauce.name %></p>
-
-  <p><strong>Cost </strong>$<%= @order_page.bread_type.price + @order_page.spread.price %></p>
+  <p><strong>Sauce: </strong><%= @order_page.sauce.name %></p> 
 
   <p><strong>Pick up time:</strong><%= @order_page.pickuptime.pickuptime %></p>
+  
+  <% total_unit_order= @order_page.bread_type.price + 
+                                @order_page.spread.price     +
+                                @order_page.vegetable.price  +
+                                @order_page.sauce.price       %>
+                                <%cost = @order_page.order_quantity*total_unit_order %>
+  
+  <p><strong>Cost </strong>$<%= cost %></p>
   
 <%= link_to '<button>Edit</button>'.html_safe, edit_order_page_path(@order_page) %> 
 <%=link_to '<button>Confirm</button> '.html_safe, home_index_path%>
