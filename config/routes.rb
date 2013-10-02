@@ -3,6 +3,7 @@ MySandwiches::Application.routes.draw do
   resources :order_pages
   resources :admin 
    match '/order_list' => 'admin#order', :as => :order_list, via: :get
+    match '/about_us' => 'home#about_us', :as => :about_us, via: :get
   
   resources :home
 

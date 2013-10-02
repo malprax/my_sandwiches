@@ -1,9 +1,9 @@
 <p id="notice"><%= notice %></p>
-
+  <h3>Summary Order</h3>
 
   <p><strong>Date: </strong><%=  Time.now.strftime(' %B %d, %Y')%></p>
   
-  <p><strong>User:</strong><%#= @order_page.order_quantity %></p>  
+  <p><strong>User:</strong><%= user.email %></p>  
   
   <p><strong>Order quantity: </strong><%= @order_page.order_quantity %></p>
 
