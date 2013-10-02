@@ -1,6 +1,5 @@
 class AdminController < ApplicationController 
   def order
-     @order_pages = OrderPage.all
-     user = User.find(params[:id])     
+     @order_pages = OrderPage.all     
   end
 end

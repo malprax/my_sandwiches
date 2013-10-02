@@ -1,51 +1,56 @@
-<h3>Order List</h3>
+<div class="container-fluid">
+  <div class="span12">
+    <h3>Order List</h3>
 
 
 
-<table class="table table-hover table-condensed table-striped">
-  <thead>
-    <tr>
-      <th>No</th>  
-      <th>Date</th>
-      <th>User</th>
-      <th>P.Time</th>
-      <th>Qty</th>
-      <th>Bread</th>
-      <th>Type</th>
-      <th>Spreads</th>      
-      <th>Vegetables</th>
-      <th>Sauce</th>
-      <th>Cost</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
+    <table class="table table-hover table-condensed table-striped">
+      <thead>
+        <tr>
+          <th>No</th>  
+          <th>Date</th>
+          <th>User</th>
+          <th>P.Time</th>
+          <th>Qty</th>
+          <th>Bread</th>
+          <th>Type</th>
+          <th>Spreads</th>      
+          <th>Vegetables</th>
+          <th>Sauce</th>
+          <th>Cost</th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
   
   
 
-  <tbody>
-    <% @order_pages.each_with_index do |order_page, i| %>
-      <tr>
-        <td><%= i+1 %></td>        
-        <td><%= order_page.created_at.strftime('%d %b, %Y') %></td>
-        <td></td>        
-        <td><%= order_page.pickuptime.pickuptime %></td>
-        <td><%= order_page.order_quantity %></td>
-        <td><%= order_page.bread_type.name%></td>
-        <td><%= order_page.sandwich_type == false ? "Standar" : "Own" %></td>
-        <td><%= order_page.spread.name%></td>
-        <td><%= order_page.vegetable.name %></td>
-        <td><%= order_page.sauce.name %></td>
-        <td>cost </td>
-        <td><%= link_to 'Show', order_page %></td>
-        <td><%= link_to 'Edit', edit_order_page_path(order_page) %></td>
-        <td><%= link_to 'Delete', order_page, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+      <tbody>
+        <% @order_pages.each_with_index do |order_page, i| %>
+          <tr>
+            <td><%= i+1 %></td>        
+            <td><%= order_page.created_at.strftime('%d %b, %Y') %></td>
+            <td></td>        
+            <td><%= order_page.pickuptime.pickuptime %></td>
+            <td><%= order_page.order_quantity %></td>
+            <td><%= order_page.bread_type.name%></td>
+            <td><%= order_page.sandwich_type == false ? "Standar" : "Own" %></td>
+            <td><%= order_page.spread.name%></td>
+            <td><%= order_page.vegetable.name %></td>
+            <td><%= order_page.sauce.name %></td>
+            <td>cost </td>
+            <td><%= link_to 'Show', order_page %></td>
+            <td><%= link_to 'Edit', edit_order_page_path(order_page) %></td>
+            <td><%= link_to 'Delete', order_page, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
 
-<br>
+    <br>
 
-<%= link_to 'New Order page', new_order_page_path %>
+    <%= link_to 'New Order page', new_order_page_path %>
+  </div>
+</div>
+
