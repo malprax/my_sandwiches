@@ -6,7 +6,7 @@ class OrderPagesController < ApplicationController
   # GET /order_pages
   # GET /order_pages.json
   def index
-    user = User.find(params[:id])
+  
    
   end
 
@@ -14,7 +14,7 @@ class OrderPagesController < ApplicationController
   # GET /order_pages/1.json
   def show
     
-   user = User.find(params[:id])
+  
 
   end
 
