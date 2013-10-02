@@ -7,19 +7,20 @@ class OrderPagesController < ApplicationController
   # GET /order_pages.json
   def index
     user = User.find(params[:id])
-    @order_pages = OrderPage.all
+   
   end
 
   # GET /order_pages/1
   # GET /order_pages/1.json
   def show
+    
    user = User.find(params[:id])
 
   end
 
   # GET /order_pages/new
   def new
-    
+  
     @order_page = OrderPage.new
   end
 
@@ -30,6 +31,7 @@ class OrderPagesController < ApplicationController
   # POST /order_pages
   # POST /order_pages.json
   def create
+     
     @order_page = OrderPage.new(order_page_params)
 
     respond_to do |format|
@@ -71,6 +73,7 @@ class OrderPagesController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_order_page
       @order_page = OrderPage.find(params[:id])
+      @order_pages = OrderPage.all
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

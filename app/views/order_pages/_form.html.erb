@@ -12,34 +12,34 @@
   <% end %>
   
   
-  <div class="order">
+  <div class="date">
      Date <%=  Time.now.strftime('%d %b, %Y')%>
   </div>
   
-  <div class="order">   
+  <div class="pickuptime">   
     <%= f.label :pickuptime, id: "pick" %>
     <%= f.collection_select(:pickuptime_id, Pickuptime.order("pickuptime"), :id, :pickuptime ) %>
      
   </div>
   
-  <div class="order">
+  <div class="quantity">
     <%= f.label :order_quantity %>
      <%= f.select :order_quantity, ['1','2','3','4','5','6','7','8','9','10'] %>  
   </div>   
   
-  <div class="order">   
+  <div class="breadtype">   
     <%= f.label :bread_type_id %><br />
     <%= f.collection_select(:bread_type_id, BreadType.order("name"), :id, :name) %>    
   </div>
   
-  <div class="order">   
+  <div class="sandwichtype">   
     <%= f.label :sandwich_type %><br />
     <%= f.radio_button :sandwich_type, false, name: "ordersandwich"%>Standard   
     <%= f.radio_button :sandwich_type,  true, name: "ordersandwich" %>Own
      
   </div>
   
-  <div class="form_order">   
+  <div class="spread">   
     <%= f.label :spread_id %><br />
     <%= f.collection_select(:spread_id, Spread.order("name"), :id, :name) %>    
   </div>

@@ -8,10 +8,18 @@
 </head>
 <body>
 <%= render 'layouts/navigate' %>
-<div class="container">
-  <%= yield %>
-</div>
-
-
+<div class="container-fluid"></div>
+<%= yield %>
 </body>
 </html>
+
+
+  <div class="row-fluid">
+    <div class="span2">
+      <!--Sidebar content-->
+    </div>
+    <div class="span10">
+      <!--Body content-->
+    </div>
+  </div>
+
