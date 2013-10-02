@@ -39,7 +39,7 @@ background-image: -o-linear-gradient(top, #ffffff, #f2f2f2);
 background-image: linear-gradient(to bottom, #F0ECBC, #F0ECBC);
 background-repeat: repeat-x;
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);
-border: 1px solid #d4d4d4;
+border: 0px solid #d4d4d4;
 -webkit-border-radius: 4px;
 -moz-border-radius: 4px;
 border-radius: 4px;
@@ -58,9 +58,9 @@ box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
 .thumbnail {
 display: block;
 padding-top:5px;
-padding-bottom: 20px;
+padding-bottom: 80px;
 line-height: 20px;
-border: 1px solid #229734;
+border: 0px solid #229734;
 -webkit-border-radius:0px;
 -moz-border-radius: 0px;
 border-radius:0px;
@@ -83,9 +83,9 @@ transition: all 0.2s ease-in-out;
 .thumbnail:hover{
 display: block;
 padding-top:5px;
-padding-bottom: 20px;
+padding-bottom: 80px;
 line-height: 20px;
-border: 1px solid #229734;
+border: 0px solid #229734;
 
 -webkit-border-radius: 0px;
 -moz-border-radius: 0px;
