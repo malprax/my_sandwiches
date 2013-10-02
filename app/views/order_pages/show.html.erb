@@ -27,7 +27,7 @@
                                     @order_page.sauce.price       %>
                                     <%cost = @order_page.order_quantity*total_unit_order %>
   
-      <p><strong>Cost </strong>$<%= cost %></p>
+      <p><strong>Cost </strong>€<%= cost %></p>
   
     <%= link_to '<button>Edit</button>'.html_safe, edit_order_page_path(@order_page) %> 
     <%=link_to '<button>Confirm</button> '.html_safe, home_index_path%>
