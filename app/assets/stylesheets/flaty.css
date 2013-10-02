@@ -48,6 +48,12 @@ border-radius: 4px;
 box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
 }
 
+.front{
+  /*background-image: linear-gradient(to bottom, #FFFFFF, #çf2f2f2);*/
+  
+}
+
+
 
 .thumbnail {
 display: block;
