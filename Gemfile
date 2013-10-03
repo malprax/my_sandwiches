@@ -57,6 +57,7 @@ gem 'actionpack-action_caching'
 gem 'activerecord-deprecated_finders'
 
 gem 'cancan'
+gem 'ckeditor'
 
 
 # Use ActiveModel has_secure_password

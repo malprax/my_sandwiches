@@ -15,4 +15,5 @@
 //= require twitter/bootstrap
 //= require turbolinks
 //= require order
+//= require ckeditor
 //= require_tree .

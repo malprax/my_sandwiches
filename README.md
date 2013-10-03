@@ -12,18 +12,4 @@ Make letter a little more bold and large
 Must have a web 2.0 look n feel with pictograms, buttom, big icons,  bold text, 
 
 
---------Perkasindo-------------
-Create Sample Website
-
-
---------Riskaqu-----------------------
-rekomendasi nikah di kuh
-surat keterangan untuk menikah dari lurah 
-
---------unifa--------------------
-materi menggambar teknik
-materi pengukuran dan teknik instrumentasi
-
---------uvri---------------------
-materi elemen mesin 1
 
