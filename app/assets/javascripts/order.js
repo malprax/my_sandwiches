@@ -1,5 +1,5 @@
 $(document).ready(function(){
-   $("option").hide()
+   $('.option').hide();
    $('.vegetable').hide();
    $('.sauce').hide();
    //own sandwich     
