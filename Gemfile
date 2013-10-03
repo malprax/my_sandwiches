@@ -57,7 +57,7 @@ gem 'actionpack-action_caching'
 gem 'activerecord-deprecated_finders'
 
 gem 'cancan'
-gem 'ckeditor'
+gem "bootstrap-wysihtml5-rails", "~> 0.3.1.23"
 
 
 # Use ActiveModel has_secure_password

@@ -50,15 +50,14 @@ GEM
     arel (4.0.0)
     atomic (1.1.14)
     bcrypt-ruby (3.1.2)
+    bootstrap-wysihtml5-rails (0.3.1.23)
+      railties (>= 3.0)
     builder (3.1.4)
     cancan (1.6.10)
     carrierwave (0.9.0)
       activemodel (>= 3.2.0)
       activesupport (>= 3.2.0)
       json (>= 1.7)
-    ckeditor (4.0.6)
-      mime-types
-      orm_adapter
     coffee-rails (4.0.0)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0.beta, < 5.0)
@@ -184,9 +183,9 @@ DEPENDENCIES
   actionpack-action_caching
   actionpack-page_caching
   activerecord-deprecated_finders
+  bootstrap-wysihtml5-rails (~> 0.3.1.23)
   cancan
   carrierwave
-  ckeditor
   coffee-rails (~> 4.0.0)
   country_select
   devise

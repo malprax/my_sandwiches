@@ -15,5 +15,6 @@
 //= require twitter/bootstrap
 //= require turbolinks
 //= require order
-//= require ckeditor
+//= require editor
+//= require bootstrap-wysihtml5
 //= require_tree .

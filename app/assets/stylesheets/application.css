@@ -12,5 +12,6 @@
  *= require_self
  *= require bootstrap_and_overrides
  *= flaty
+ *= require bootstrap-wysihtml5
  *= require_tree .
  */
