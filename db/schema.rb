@@ -56,27 +56,6 @@ ActiveRecord::Schema.define(version: 20131003063507) do
     t.string   "order_pages_id"
   end
 
-  create_table "own_sandwiches", force: true do |t|
-    t.string   "spreads"
-    t.string   "vegetables"
-    t.string   "sauce"
-    t.string   "prices"
-    t.string   "order_pages_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "owns", force: true do |t|
-    t.string   "pickuptime2"
-    t.integer  "orderquantity2"
-    t.boolean  "breadtype2"
-    t.string   "spreads2"
-    t.string   "vegetables2"
-    t.string   "sauce2"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "pickuptimes", force: true do |t|
     t.string   "pickuptime"
     t.datetime "created_at"
@@ -98,18 +77,7 @@ ActiveRecord::Schema.define(version: 20131003063507) do
 
   create_table "spreads", force: true do |t|
     t.string   "name"
-    t.integer  "price"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "standards", force: true do |t|
-    t.string   "pickuptime1"
-    t.integer  "orderquantity1"
-    t.boolean  "breadtype1"
-    t.string   "spreads1"
-    t.string   "vegetables1"
-    t.string   "sauce1"
+    t.decimal  "price",      precision: 10, scale: 1
     t.datetime "created_at"
     t.datetime "updated_at"
   end
