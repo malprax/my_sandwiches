@@ -30,7 +30,7 @@
   </div>   
   
   <div class="breadtype">   
-    <%= f.label :bread_type_id %><br />
+    <%= f.label :bread_type_id, :id => "bread" %><br />
     <%= f.collection_radio_buttons(:bread_type_id, BreadType.order("name"), :id, :name)%>    
   </div>
   
@@ -47,7 +47,7 @@
   </div> -->
   
   <div class="spread">
-    <%= f.label :spread_id %><br /> 
+    <%= f.label :spread_id, :id => "spread" %><br /> 
     <% Spread.all.each do |spread| %> 
         <%= check_box_tag "spread", spread.id%>
         <%= spread.name %>
