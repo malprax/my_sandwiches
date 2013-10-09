@@ -1,47 +1,50 @@
-<h3>Order List</h3>
+<div class="container-fluid">
+  <h3>Order List</h3>
 
-<table class="table">
-  <thead>
-    <tr>
-      <th>No</th>
-  
-      <th>Date</th>
-      <th>Pick up time</th>
-      <th>Order quantity</th>
-      <th>Bread type</th>
-      <th>Sandwiches type</th>
-      <th>Spreads</th>      
-      <th>Vegetables</th>
-      <th>Sauce</th>
-      <th>Cost</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @order_pages.each_with_index do |order_page, i| %>
+  <table class="table">
+    <thead>
       <tr>
-        <td><%= i+1 %></td>
-        
-        <td><%= order_page.created_at.strftime('%d %b, %Y') %></td>
-        <td><%#= order_page.pickuptime.pickuptime %></td>
-        <td><%= order_page.order_quantity %></td>
-        <td><%= order_page.bread_type.name%></td>
-        <td><%#= order_page.sandwiches_type == true ? "Standard" : "Own"  %></td>
-        <td><%#= order_page.spread.name %></td>
-        <td><%#= order_page.vegetable.name %></td>
-        <td><%#= order_page.sauce.name %></td>
-        <td>Cost</td>
-        <td><%= link_to 'Show', order_page %></td>
-        <td><%= link_to 'Edit', edit_order_page_path(order_page) %></td>
-        <td><%= link_to 'Delete', order_page, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <th>No</th>
+  
+        <th>Date</th>
+        <th>Pick up time</th>
+        <th>Order quantity</th>
+        <th>Bread type</th>
+        <th>Sandwiches type</th>
+        <th>Spreads</th>      
+        <th>Vegetables</th>
+        <th>Sauce</th>
+        <th>Cost</th>
+        <th></th>
+        <th></th>
+        <th></th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
 
-<br>
+    <tbody>
+      <% @order_pages.each_with_index do |order_page, i| %>
+        <tr>
+          <td><%= i+1 %></td>
+        
+          <td><%= order_page.created_at.strftime('%d %b, %Y') %></td>
+          <td><%#= order_page.pickuptime.pickuptime %></td>
+          <td><%= order_page.order_quantity %></td>
+          <td><%= order_page.bread_type.name%></td>
+          <td><%#= order_page.sandwiches_type == true ? "Standard" : "Own"  %></td>
+          <td><%#= order_page.spread.name %></td>
+          <td><%#= order_page.vegetable.name %></td>
+          <td><%#= order_page.sauce.name %></td>
+          <td>Cost</td>
+          <td><%= link_to 'Show', order_page %></td>
+          <td><%= link_to 'Edit', edit_order_page_path(order_page) %></td>
+          <td><%= link_to 'Delete', order_page, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
 
-<%= link_to 'New Order page', new_order_page_path %>
+  <br>
+
+  <%= link_to 'New Order page', new_order_page_path %>
+  
+</div>

@@ -1,6 +1,6 @@
 class OrderPagesController < ApplicationController
-  load_and_authorize_resource
-  before_action :authenticate_user!
+  # load_and_authorize_resource
+  # before_action :authenticate_user!
   before_action :set_order_page, only: [:show, :edit, :update, :destroy]
 
   # GET /order_pages
@@ -83,6 +83,6 @@ class OrderPagesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def order_page_params
-      params.require(:order_page).permit(:pickuptime_id, :order_quantity, :bread_type_id, :sandwich_type, :spread_id,  :vegetable_id, :sauce_id, :user_id, :comment_id)
+      params.require(:order_page).permit(:pickuptime_id, :order_quantity, :bread_type_id, :spread_id,  :vegetable_id, :sauce_id, :user_id, :comment_id)
     end
 end

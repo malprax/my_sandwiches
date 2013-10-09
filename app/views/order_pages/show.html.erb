@@ -13,7 +13,7 @@
   
       <p><strong>Sandwiches type: </strong><%= @order_page.sandwich_type == false ? "Standar" : "Own" %></p>
 
-      <p><strong>Spread: </strong><%= @order_page.spread.name %></p>
+      <p><strong>Spread: </strong><%#= @order_page.spread.name %></p>
   
       <p><strong>Vegetable: </strong><%= @order_page.vegetable.name %></p>
   
@@ -21,13 +21,14 @@
 
       <p><strong>Pick up time:</strong><%= @order_page.pickuptime.pickuptime %></p>
   
-      <% total_unit_order= @order_page.bread_type.price + 
+      <%# total_unit_order= @order_page.bread_type.price + 
                                     @order_page.spread.price     +
                                     @order_page.vegetable.price  +
                                     @order_page.sauce.price       %>
-                                    <%cost = @order_page.order_quantity*total_unit_order %>
+                                    <%#cost = @order_page.order_quantity*total_unit_order %>
   
-      <p><strong>Cost </strong>€<%= cost %></p>
+      <p><strong>Cost </strong>€<%#= cost %></p>
+      <p><strong>Comment </strong><%#= @order_page.comment.comment %></p>
   
     <%= link_to '<button>Edit</button>'.html_safe, edit_order_page_path(@order_page) %> 
     <%=link_to '<button>Confirm</button> '.html_safe, home_index_path%>

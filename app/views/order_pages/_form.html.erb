@@ -1,4 +1,4 @@
-<%= form_for(@order_page)  do |f| %>
+<%= form_for(@order_page, :remote => true)  do |f| %>
   <% if @order_page.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@order_page.errors.count, "error") %> prohibited this order_page from being saved:</h2>
@@ -24,20 +24,22 @@
   
   <div class="quantity">
     <%= f.label :order_quantity %>
-     <%= f.select :order_quantity, ['1','2','3','4','5','6','7','8','9','10'] %>  
+     <%= f.range_field :order_quantity, :in => 1..10, :value => 1%>      
+      
+     <span class="badge badge-warning"><text id="order_quantity">1</text></span>
   </div>   
   
   <div class="breadtype">   
     <%= f.label :bread_type_id %><br />
-    <%= f.collection_select(:bread_type_id, BreadType.order("name"), :id, :name) %>    
+    <%= f.collection_radio_buttons(:bread_type_id, BreadType.order("name"), :id, :name)%>    
   </div>
   
-  <div class="sandwichtype">   
+  <!-- <div class="sandwichtype">   
     <%= f.label :sandwich_type %><br />
     <%= f.radio_button :sandwich_type, false, name: "ordersandwich"%>Standard   
     <%= f.radio_button :sandwich_type,  true, name: "ordersandwich", prompt: "You Can Choose Your Vegetable And Sauce" %>Own
      
-  </div>
+  </div> -->
   
   <!-- <div class="spread">   
     <%= f.label :spread_id %><br />
@@ -47,12 +49,28 @@
   <div class="spread">
     <%= f.label :spread_id %><br /> 
     <% Spread.all.each do |spread| %> 
-        <%= check_box_tag "order_page[spread_id][]", spread.id%>
+        <%= check_box_tag "spread", spread.id%>
         <%= spread.name %>
     <% end %>      
   </div>
+  
+  <div class="vegetable">
+    <%= f.label :vegetable_id %><br /> 
+    <% Vegetable.all.each do |vegetable| %> 
+        <%= check_box_tag "vegetable", vegetable.id%>
+        <%= vegetable.name %>
+    <% end %>      
+  </div>
+  
+  <div class="sauce">
+    <%= f.label :sauce_id %><br /> 
+    <% Sauce.all.each do |sauce| %> 
+        <%= check_box_tag "sauce", sauce.id%>
+        <%= sauce.name %>
+    <% end %>      
+  </div>
     
-  <div class="vegetable">   
+  <!-- <div class="vegetable">   
     <%= f.label :vegetable_id, "Vegetable 1" %><br />
     <%= f.collection_select(:vegetable_id, Vegetable.order("name"), :id, :name) %>  
   </div>
@@ -70,7 +88,7 @@
   <div class="sauce">   
     <%= f.label :sauce_id %><br />
     <%= f.collection_select(:sauce_id, Sauce.order("name"), :id, :name) %>    
-  </div>  
+  </div>   -->
   
   <div class="comment">
     <%= f.label :comment_id %><br />
