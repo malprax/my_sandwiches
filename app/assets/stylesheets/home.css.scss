@@ -11,4 +11,82 @@ font-weight: 500;
 color: #9C2727;
 text-shadow: 0 1px 0 #ffffff;
 
+
+
 }
+
+.home{   
+  background: url('http://www.freemages.co.uk/album/divers/sandwich.jpg')!important;  
+}
+
+.hero h3{
+  text-transform: uppercase;
+  line-height: 25px;
+  color: #0F6464;
+  font-weight: 600;
+  
+}
+
+.hero p{
+  font-weight: normal;
+  line-height: 1;
+  color: #FFFFFF;
+  padding-right:26px;
+  
+}
+
+.hero Button {
+  background-color: #77b55a;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  border: 1px solid #4b8f29;
+  display: inline-block;
+  color: #F0ECBC;
+  font-family: arial;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 8px 14px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #5b8a3c;
+  -webkit-transition: all 0.01s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.01s ease-in-out;
+
+}
+.hero{
+  background-image: url('/assets/sandwich.jpg');
+  color: #fff;
+  height:540px;
+  text-align: right;
+  overflow: hidden;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
+
+
+.container_home{
+  position: relative;
+  background-color: rgba(245, 236, 236, 0.78);  
+  padding: 20px;  
+  border-radius: 4px;
+  max-width: 50%; 
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 160px;
+}
+
+
+body {
+padding-left: 0px;
+padding-right: 0px;
+}
+
+
+
+
+
+
+
