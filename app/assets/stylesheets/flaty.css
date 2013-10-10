@@ -23,7 +23,7 @@ background-image: -moz-linear-gradient(top, #ffffff, #f2f2f2);
 background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#f2f2f2));
 background-image: -webkit-linear-gradient(top, #ffffff, #f2f2f2);
 background-image: -o-linear-gradient(top, #ffffff, #f2f2f2);
-background-image: linear-gradient(to bottom, #F0ECBC, #F0ECBC);
+background-image: linear-gradient(to bottom, #F0ECBC, #FFFFFF);
 background-repeat: repeat-x;
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);
 border: 0px solid #d4d4d4;
@@ -42,7 +42,7 @@ box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
 .navbar .nav>li>a {
 float: none;
 padding: 18px 10px 10px;
-color: #77b55a;
+color: #0F6464;
 font-weight: 600;
 text-decoration: none;
 text-shadow: 0 1px 0 #ffffff;
