@@ -3,6 +3,7 @@ class CreateBreadTypes < ActiveRecord::Migration
     create_table :bread_types do |t|
       t.string :name
       t.integer :price
+    
 
       t.timestamps
     end

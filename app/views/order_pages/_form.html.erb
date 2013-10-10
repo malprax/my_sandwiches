@@ -47,7 +47,7 @@
   </div> -->
   
   <div class="spread">
-    <%= f.label :spread_id, :id => "spread" %><br /> 
+    <%= f.label :spread_id, :id => "labelspread" %><br /> 
     <% Spread.all.each do |spread| %> 
         <%= check_box_tag "spread", spread.id%>
         <%= spread.name %>
@@ -63,7 +63,7 @@
   </div>
   
   <div class="sauce">
-    <%= f.label :sauce_id %><br /> 
+    <%= f.label :sauce_id, :id => "labelsauce" %><br /> 
     <% Sauce.all.each do |sauce| %> 
         <%= check_box_tag "sauce", sauce.id%>
         <%= sauce.name %>
@@ -91,7 +91,7 @@
   </div>   -->
   
   <div class="comment">
-    <%= f.label :comment_id %><br />
+    <%= f.label :comment_id, :id => "comment" %><br />
     <%= f.text_area :comment_id, class:'wysihtml5', id:'some-textarea', hint:"Write Your Comment Here" %>
   </div> 
    
