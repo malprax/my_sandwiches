@@ -1,3 +1,14 @@
+.navbar .brand {
+float: left;
+display: block;
+padding: 10px 20px 10px;
+margin-left: -20px;
+font-size: 40px;
+font-weight: 800;
+color: #9C2727;
+text-shadow: 0 1px 0 #ffffff;
+}
+
 .navbar .nav {
 position: relative;
 left: 0;
@@ -41,9 +52,10 @@ box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
 }
 .navbar .nav>li>a {
 float: none;
-padding: 18px 10px 10px;
+padding: 28px 10px 10px;
 color: #0F6464;
 font-weight:600;
+font-size: 16px;
 text-decoration: none;
 font-family: "Open Sans", Arial, serif;
 }

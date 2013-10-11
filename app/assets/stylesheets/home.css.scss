@@ -1,19 +1,6 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.navbar .brand {
-float: left;
-display: block;
-padding: 10px 20px 10px;
-margin-left: -20px;
-font-size: 20px;
-font-weight: 800;
-color: #9C2727;
-text-shadow: 0 1px 0 #ffffff;
-
-
-
-}
 
 .home{   
   background: url('http://www.freemages.co.uk/album/divers/sandwich.jpg')!important;  
@@ -62,9 +49,10 @@ text-shadow: 0 1px 0 #ffffff;
   height:400px;
   text-align: right;
   overflow: hidden;
-  background-position: 100%;
+  background-position: 200%;
   background-repeat: no-repeat;
   background-color: #F0ECBC;
+  background-size: cover;
 }
 
 
