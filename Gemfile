@@ -63,6 +63,7 @@ gem 'cancan'
 gem "bootstrap-wysihtml5-rails", "~> 0.3.1.23"
 
 
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

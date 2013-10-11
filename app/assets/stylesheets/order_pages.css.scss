@@ -2,32 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
-//  
-//}
-//.order  label {
-//  float: left;
-//  width: 100px;
-//  text-align: right;
-//  padding-top: 23px;
-//  margin: 0px 6px;
-//}
-//
-//.order  div.input {
-//  padding-top: 20px;
-//  margin-bottom: 0px;
-//}
-//
-//.order  div.boolean[type='submit'] {
-//  margin-left: 0px;
-//}
-//
-//.order div.boolean label {
-//  float: none;
-//  margin: 0;
-//}
-
-
 //carrousel control
 .carousel-inner {
   overflow: hidden;
@@ -68,7 +42,7 @@
 //well_order
 .well_order {
   min-height: 20px;
-  padding: 19px;
+  padding: 20px 26px 20px 20px;
   margin-bottom: 20px;
   background-color: #D4F0D8;
   border: 1px solid #FCFCFC;
@@ -153,10 +127,11 @@ input[type="radio"] {
 }
 
 input[type="checkbox"] { 
-   padding-left:10px;
-    width: auto;
-    height: 24px;
-    vertical-align: bottom;
+  padding-left: 10px;
+  margin: 0px 0px -5px 0px;
+  width: auto;
+  height: 30px;
+  vertical-align: bottom;
     
 }
 
