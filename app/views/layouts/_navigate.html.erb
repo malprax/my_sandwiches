@@ -1,4 +1,4 @@
-<div class="navbar navbar-static-top">
+<div class="navbar navbar-fixed-top">
    <div class="navbar-inner">
     <div class="container">
       
@@ -17,7 +17,7 @@
         <!-- .nav, .navbar-search, .navbar-form, etc -->
         <ul class="nav nav-pills ">
             <li><%=link_to '<i class="icon-home"></i> Home'.html_safe, root_url%></li>       
-            <li><%=link_to 'About Us'.html_safe, about_us_path%></li> 
+          
             
             <%if user_signed_in? %>
               <% if can? :show, order_list_path %>
