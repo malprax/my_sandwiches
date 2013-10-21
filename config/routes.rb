@@ -1,4 +1,6 @@
 MySandwiches::Application.routes.draw do
+  resources :newsletters
+
   devise_for :users
   resources :order_pages
   resources :admin 

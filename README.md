@@ -31,3 +31,69 @@
 15. Make the order viewing page sortable that e.g the restaurant can sort based on bread type, spread, etc on the website
 
 
+Teman SD:
+
+Teman SMP:
+
+
+Teman SMU:
+Wahyu Eka Putra
+Firman Syam
+Idil Akbar
+Budi Wahyudi
+
+
+Teman Kuliah
+M07iqbal
+M02munawirmakkawaru
+M02Beno
+M02Irman
+M02Waldi
+M02Fadli
+M02Taufan
+M05RidwanGariting
+M05Recky
+M06Firman
+M05Aditya Pratama Syahdan
+M05Abdul Rahman
+M02AroenAzharun
+M02AiAsriAn
+M02Ratna
+M02Kamaluddin Suyuti
+Pps08Dian
+Pps08Yanti
+Pps08Nisrina
+M04Zulkifli
+I02M Yusuf Kadir
+M02Ratna Dewi
+M07Iwan Kazhamy
+
+
+Teman Dekat Rumah
+Reski
+Irma
+Charli
+Indra
+Atman Amir
+
+
+
+Teman Jalan
+Miss Indun
+Nurhasanah
+Aswan Amir
+Andrial Imran
+M.Fadly
+Imam Rohani
+Asmeyati Sabir
+Audri
+Idil
+Wahyu Syamsu
+
+
+Tim Robot Universitas Fajar
+
+
+
+
+

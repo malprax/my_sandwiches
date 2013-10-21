@@ -6,7 +6,7 @@
       <%= f.error_notification %>
 
       <div class="form-inputs">
-        <%= f.input :email, :required => true, :autofocus => true %>
+        <%= f.input :email, :class => "email_optional", :required => true, :autofocus => true %>
         <%= f.input :password, :required => true %>
         <%= f.input :password_confirmation, :required => true %>
       </div>

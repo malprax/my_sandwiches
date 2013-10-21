@@ -5,9 +5,7 @@ class OrderPagesController < ApplicationController
 
   # GET /order_pages
   # GET /order_pages.json
-  def index
-  
-   
+  def index   
   end
 
   # GET /order_pages/1
@@ -30,19 +28,17 @@ class OrderPagesController < ApplicationController
 
   # POST /order_pages
   # POST /order_pages.json
-  def create
-     
+  def create     
     @order_page = OrderPage.new(order_page_params)
-
     respond_to do |format|
       if @order_page.save
         format.html { redirect_to @order_page, notice: 'Order page was successfully created.' }
         format.json { render action: 'show', status: :created, location: @order_page }
-        format.js
+      
       else
         format.html { render action: 'new' }
         format.json { render json: @order_page.errors, status: :unprocessable_entity }
-        format.js
+       
       end
     end
   end

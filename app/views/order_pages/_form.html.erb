@@ -23,41 +23,41 @@
      
   </div>
   
-  <div class="quantity">
+  <!-- <div class="quantity">
     <%= f.label :order_quantity %>
      <%= f.range_field :order_quantity, :in => 1..10, :value => 1%>      
       
      <span class="badge badge-warning"><text id="order_quantity">1</text></span>
-  </div>   
+  </div>    -->
   
-  <div class="breadtype">   
+  <!-- <div class="breadtype">   
     <%= f.label :bread_type_id, :id => "bread" %><br />
     <%= f.collection_radio_buttons(:bread_type_id, BreadType.order("name"), :id, :name)%>    
-  </div>
+  </div> -->
    
-  <div class="spread">
+  <!-- <div class="spread">
     <%= f.label :spread_id, :id => "labelspread" %><br /> 
     <% Spread.all.each do |spread| %> 
         <%= check_box_tag "spread", spread.id%>
         <%= spread.name %>
     <% end %>      
-  </div>
+  </div> -->
   
-  <div class="vegetable">
+  <!-- <div class="vegetable">
     <%= f.label :vegetable_id %><br /> 
     <% Vegetable.all.each do |vegetable| %> 
         <%= check_box_tag "vegetable", vegetable.id%>
         <%= vegetable.name %>
     <% end %>      
-  </div>
+  </div> -->
   
-  <div class="sauce">
+  <!-- <div class="sauce">
     <%= f.label :sauce_id, :id => "labelsauce" %><br /> 
     <% Sauce.all.each do |sauce| %> 
-        <%= check_box_tag "sauce", sauce.id%>
+        <%= check_box_tag "order_page[sauce_ids][]", sauce.id%>
         <%= sauce.name %>
     <% end %>      
-  </div>
+  </div> -->
     
   <!-- <div class="vegetable">   
     <%= f.label :vegetable_id, "Vegetable 1" %><br />
@@ -66,10 +66,10 @@
   
  
   
-  <div class="comment">
+  <!-- <div class="comment">
     <%= f.label :comment_id, :id => "comment" %><br />
     <%= f.text_area :comment_id, class:'wysihtml5', id:'some-textarea', hint:"Write Your Comment Here" %>
-  </div> 
+  </div>  -->
    
     <div class="actions">
       <%= f.submit 'Next', :class => "btnform"%>
