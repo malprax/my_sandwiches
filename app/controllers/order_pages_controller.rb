@@ -41,6 +41,7 @@ class OrderPagesController < ApplicationController
        
       end
     end
+    
   end
 
   # PATCH/PUT /order_pages/1
