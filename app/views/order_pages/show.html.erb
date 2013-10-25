@@ -15,11 +15,11 @@
 
       <p><strong>Spread: </strong><%#= @order_page.spread.name %></p>
   
-      <p><strong>Vegetable: </strong><%#= @order_page.vegetable.name %></p>
+      <p><strong>Vegetable: </strong><%= @order_page.vegetables.map(&:name).to_sentence %></p>
   
-      <p><strong>Sauce: </strong><%#= @order_page.sauce.name %></p> 
+      <p><strong>Sauce: </strong><%= @order_page.sauce %></p> 
 
-      <p><strong>Pick up time:</strong><%= @order_page.pickuptime.pickuptime %></p>
+      <p><strong>Pick up time:</strong><%= @order_page.pickuptime %></p>
   
       <%# total_unit_order= @order_page.bread_type.price + 
                                     @order_page.spread.price     +

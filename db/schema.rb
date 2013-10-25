@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131021035405) do
+ActiveRecord::Schema.define(version: 20131025081840) do
 
   create_table "bread_types", force: true do |t|
     t.string   "name"
@@ -52,6 +52,16 @@ ActiveRecord::Schema.define(version: 20131021035405) do
   add_index "order_pages", ["spread_id"], name: "index_order_pages_on_spread_id", using: :btree
   add_index "order_pages", ["user_id"], name: "index_order_pages_on_user_id", using: :btree
   add_index "order_pages", ["vegetable_id"], name: "index_order_pages_on_vegetable_id", using: :btree
+
+  create_table "order_pages_vegetables", force: true do |t|
+    t.integer  "order_page_id"
+    t.integer  "vegetable_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "order_pages_vegetables", ["order_page_id"], name: "index_order_pages_vegetables_on_order_page_id", using: :btree
+  add_index "order_pages_vegetables", ["vegetable_id"], name: "index_order_pages_vegetables_on_vegetable_id", using: :btree
 
   create_table "original_sandwiches", force: true do |t|
     t.string   "quantity"

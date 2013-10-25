@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  order_page_id: 
+  vegetable_id: 
+
+two:
+  order_page_id: 
+  vegetable_id: 

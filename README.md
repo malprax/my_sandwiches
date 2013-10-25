@@ -37,56 +37,52 @@ Teman SMP:
 
 
 Teman SMU:
-Wahyu Eka Putra
-Firman Syam
-Idil Akbar
-Budi Wahyudi
 
+Teman Kuliah:
+M07iqbal Muhammad Iqbal, ST
+M02munawirmakkawaru Munawir Makkawaru, ST
+M02Beno, Zainul Wisuda, ST
+M02Irman, Irman Ferdiansyah, ST
+M02Waldi, Andi Waldi, ST
+M02Fadli, Fadli Tahir, ST
+M02Taufan, Muhammad Taufan, ST
+M05RidwanGariting, Ridwan, ST
+M05Recky Recky, ST
+M06Firman Firman, ST, MT
+M05 Aditya Pratama Syahdan, ST
+M05 Abdul Rahman, ST
+M02Aroen Azharun, ST 
 
-Teman Kuliah
-M07iqbal
-M02munawirmakkawaru
-M02Beno
-M02Irman
-M02Waldi
-M02Fadli
-M02Taufan
-M05RidwanGariting
-M05Recky
-M06Firman
-M05Aditya Pratama Syahdan
-M05Abdul Rahman
-M02AroenAzharun
-M02AiAsriAn
-M02Ratna
-M02Kamaluddin Suyuti
-Pps08Dian
-Pps08Yanti
-Pps08Nisrina
-M04Zulkifli
-I02M Yusuf Kadir
-M02Ratna Dewi
-M07Iwan Kazhamy
+M02Ratna -> Ratnawati Dewi, ST
+M02Kamaluddin Suyuti -> Kamaluddin Suyuti
+Pps08Dian Dian Mahdiansyah, SPd, MT
+Pps08Yanti Yanti, SPd, MT
+Pps08Nisrina Nisrina, ST, MT
+M04Zulkifli, Zulkifli, ST, MT
+
+I02 M.Yusuf Kadir, ST
+
+M07 Iwan Kazhamy, ST
 
 
 Teman Dekat Rumah
 Reski
 Irma
-Charli
-Indra
-Atman Amir
+Indra Hadi Assagaf,S.Kom,M.Kom
+Atman Amir,SPd,MPd
 
 
 
 Teman Jalan
 Miss Indun
-Nurhasanah
-Aswan Amir
-Andrial Imran
-M.Fadly
-Imam Rohani
-Asmeyati Sabir
-Audri
+Nurhasanah, SPdi
+Aswan Amir, SKed
+Andrial Imran, ST, MT
+M.Fadly, ST, MT
+Imam Rohani, ST, MT
+Asmeati Sabir, ST, MT
+Audri Leonard Wawo, SE
+
 Idil
 Wahyu Syamsu
 

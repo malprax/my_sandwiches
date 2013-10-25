@@ -6,6 +6,7 @@ class OrderPagesController < ApplicationController
   # GET /order_pages
   # GET /order_pages.json
   def index   
+    @order_pages = OrderPage.all.reverse
   end
 
   # GET /order_pages/1
@@ -30,6 +31,7 @@ class OrderPagesController < ApplicationController
   # POST /order_pages.json
   def create     
     @order_page = OrderPage.new(order_page_params)
+    @order_page.user = current_user if current_user
     respond_to do |format|
       if @order_page.save
         format.html { redirect_to @order_page, notice: 'Order page was successfully created.' }
@@ -80,6 +82,6 @@ class OrderPagesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def order_page_params
-      params.require(:order_page).permit(:pickuptime_id, :order_quantity, :bread_type_id, :spread_id,  :vegetable_id, :sauce_id, :user_id, :comment_id)
+      params.require(:order_page).permit(:pickuptime_id, :order_quantity, :bread_type_id, :spread_id, :sauce_id, :user_id, :comment_id, :vegetable_ids => [])
     end
 end
