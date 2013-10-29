@@ -38,7 +38,7 @@
   <div class="spread">
     <%= f.label :spread_id, :id => "labelspread" %><br /> 
     <% Spread.all.each do |spread| %> 
-        <%= check_box_tag "spread", spread.id%>
+        <%= check_box_tag "order_page[spread_ids][]", spread.id, f.object.spreads_ids.include?(spread.id)%>
         <%= spread.name %>
     <% end %>      
   </div>
@@ -54,7 +54,7 @@
   <div class="sauce">
     <%= f.label :sauce_id, :id => "labelsauce" %><br /> 
     <% Sauce.all.each do |sauce| %> 
-        <%= check_box_tag "order_page[sauce_ids][]", sauce.id%>
+        <%= check_box_tag "order_page[sauce_ids][]", sauce.id, f.object.sauce_ids.include?(sauce.id)%>
         <%= sauce.name %>
     <% end %>      
   </div>

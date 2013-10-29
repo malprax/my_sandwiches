@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131029080750) do
+ActiveRecord::Schema.define(version: 20131029082421) do
 
   create_table "bread_types", force: true do |t|
     t.string   "name"
@@ -46,6 +46,26 @@ ActiveRecord::Schema.define(version: 20131029080750) do
   add_index "order_pages", ["spread_id"], name: "index_order_pages_on_spread_id", using: :btree
   add_index "order_pages", ["user_id"], name: "index_order_pages_on_user_id", using: :btree
   add_index "order_pages", ["vegetable_id"], name: "index_order_pages_on_vegetable_id", using: :btree
+
+  create_table "order_pages_sauces", force: true do |t|
+    t.integer  "order_page_id"
+    t.integer  "sauce_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "order_pages_sauces", ["order_page_id"], name: "index_order_pages_sauces_on_order_page_id", using: :btree
+  add_index "order_pages_sauces", ["sauce_id"], name: "index_order_pages_sauces_on_sauce_id", using: :btree
+
+  create_table "order_pages_spreads", force: true do |t|
+    t.integer  "order_page_id"
+    t.integer  "spread_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "order_pages_spreads", ["order_page_id"], name: "index_order_pages_spreads_on_order_page_id", using: :btree
+  add_index "order_pages_spreads", ["spread_id"], name: "index_order_pages_spreads_on_spread_id", using: :btree
 
   create_table "order_pages_vegetables", force: true do |t|
     t.integer  "order_page_id"
