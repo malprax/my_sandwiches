@@ -11,11 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131026000843) do
+ActiveRecord::Schema.define(version: 20131029080750) do
 
   create_table "bread_types", force: true do |t|
     t.string   "name"
-    t.integer  "price"
+    t.float    "price"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -101,7 +101,7 @@ ActiveRecord::Schema.define(version: 20131026000843) do
 
   create_table "sauces", force: true do |t|
     t.string   "name"
-    t.integer  "price"
+    t.float    "price"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -146,7 +146,7 @@ ActiveRecord::Schema.define(version: 20131026000843) do
 
   create_table "vegetables", force: true do |t|
     t.string   "name"
-    t.integer  "price"
+    t.float    "price"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
