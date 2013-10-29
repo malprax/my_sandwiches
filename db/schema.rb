@@ -11,17 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131025081840) do
+ActiveRecord::Schema.define(version: 20131026000843) do
 
   create_table "bread_types", force: true do |t|
     t.string   "name"
     t.integer  "price"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "comments", force: true do |t|
-    t.text     "comment"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -43,7 +37,7 @@ ActiveRecord::Schema.define(version: 20131025081840) do
     t.integer  "order_quantity"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "comment_id"
+    t.text     "comment"
   end
 
   add_index "order_pages", ["bread_type_id"], name: "index_order_pages_on_bread_type_id", using: :btree
@@ -114,7 +108,7 @@ ActiveRecord::Schema.define(version: 20131025081840) do
 
   create_table "spreads", force: true do |t|
     t.string   "name"
-    t.decimal  "price",      precision: 10, scale: 1
+    t.float    "price"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

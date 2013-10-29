@@ -31,6 +31,37 @@
 15. Make the order viewing page sortable that e.g the restaurant can sort based on bread type, spread, etc on the website
 
 
+
+M02munawirmakkawaru Munawir Makkawaru, ST
+M02Beno, Zainul Wisuda, ST
+M02Irman, Irman Ferdiansyah, ST
+M02Waldi, Andi Waldi, ST
+H. Hasrullah
+M07iqbal Muhammad Iqbal, ST
+Nurhasanah, SPdi
+M02Taufan, Muhammad Taufan, ST
+Hj. Hasrah
+M02Fadli, Fadli Tahir, ST
+M.Fadly, ST, MT
+Imam Rohani, ST, MT
+Andi Ade Larasati, ST, MT
+Yusuf, ST, MT
+Pps08Dian Dian Mahdiansyah, SPd, MT
+Andrial Imran, ST, MT
+Asmeati Sabir, ST, MT
+M04Zulkifli, Zulkifli, ST, MT
+Pps08Yanti Yanti, SPd, MT
+Audri Leonard Wawo, SE
+Prabowo, SE
+Hj. Hunaedah
+Nasir, & Ny
+Aswan Amir, SKed
+Wahyu Syamsu
+Indra Hadi Assagaf,S.Kom,M.Kom
+Idil
+
+
+
 Teman SD:
 
 Teman SMP:
@@ -39,13 +70,9 @@ Teman SMP:
 Teman SMU:
 
 Teman Kuliah:
-M07iqbal Muhammad Iqbal, ST
-M02munawirmakkawaru Munawir Makkawaru, ST
-M02Beno, Zainul Wisuda, ST
-M02Irman, Irman Ferdiansyah, ST
-M02Waldi, Andi Waldi, ST
-M02Fadli, Fadli Tahir, ST
-M02Taufan, Muhammad Taufan, ST
+
+
+
 M05RidwanGariting, Ridwan, ST
 M05Recky Recky, ST
 M06Firman Firman, ST, MT
@@ -55,10 +82,10 @@ M02Aroen Azharun, ST
 
 M02Ratna -> Ratnawati Dewi, ST
 M02Kamaluddin Suyuti -> Kamaluddin Suyuti
-Pps08Dian Dian Mahdiansyah, SPd, MT
-Pps08Yanti Yanti, SPd, MT
+
+
 Pps08Nisrina Nisrina, ST, MT
-M04Zulkifli, Zulkifli, ST, MT
+
 
 I02 M.Yusuf Kadir, ST
 
@@ -68,26 +95,18 @@ M07 Iwan Kazhamy, ST
 Teman Dekat Rumah
 Reski
 Irma
-Indra Hadi Assagaf,S.Kom,M.Kom
 Atman Amir,SPd,MPd
 
 
 
 Teman Jalan
-Miss Indun
-Nurhasanah, SPdi
-Aswan Amir, SKed
-Andrial Imran, ST, MT
-M.Fadly, ST, MT
-Imam Rohani, ST, MT
-Asmeati Sabir, ST, MT
-Audri Leonard Wawo, SE
 
-Idil
-Wahyu Syamsu
 
 
 Tim Robot Universitas Fajar
+
+
+
 
 
 
