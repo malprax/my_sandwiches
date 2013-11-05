@@ -5,19 +5,19 @@
 
       <p><strong>Date: </strong><%=  Time.now.strftime(' %B %d, %Y')%></p>
   
-      <p><strong>User:</strong></p>  
+      <p><strong>User:<%#= @order_page.user.email if @order_page.user  %></strong></p>  
   
-      <p><strong>Order quantity: </strong><%#= @order_page.order_quantity %></p>
+      <p><strong>Order quantity: </strong><%= @order_page.order_quantity %></p>
 
-      <p><strong>Bread type:</strong>  <%#= @order_page.bread_type.name %></p>
+      <p><strong>Bread type:</strong>  <%= @order_page.bread_type.name %></p>
   
-      <p><strong>Sandwiches type: </strong><%#= @order_page.sandwich_type == false ? "Standar" : "Own" %></p>
+      <p><strong>Sandwiches type: </strong><%= @order_page.sandwich_type == false ? "Standar" : "Own" %></p>
 
-      <p><strong>Spread: </strong><%#= @order_page.spread.name %></p>
+      <p><strong>Spread: </strong><%= @order_page.spreads.map(&:name).to_sentence %></p>
   
       <p><strong>Vegetable: </strong><%= @order_page.vegetables.map(&:name).to_sentence %></p>
   
-      <p><strong>Sauce: </strong><%= @order_page.sauce %></p> 
+      <p><strong>Sauce: </strong><%= @order_page.sauces.map(&:name).to_sentence %></p> 
 
       <p><strong>Pick up time:</strong><%= @order_page.pickuptime.pickuptime %></p>
   
@@ -27,8 +27,8 @@
                                     @order_page.sauce.price       %>
                                     <%#cost = @order_page.order_quantity*total_unit_order %>
   
-      <p><strong>Cost </strong>€<%#= cost %></p>
-      <p><strong>Comment </strong><%#= @order_page.comment.comment %></p>
+      <p><strong>Cost </strong>€<%= @order_page.spreads.map(&:price).to_sentence %></p>
+      <p><strong>Comment </strong><%= @order_page.comment %></p>
   
     <%= link_to '<button>Edit</button>'.html_safe, edit_order_page_path(@order_page) %> 
     <%=link_to '<button>Confirm</button> '.html_safe, home_index_path%>
