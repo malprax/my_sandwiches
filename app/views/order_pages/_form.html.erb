@@ -34,22 +34,27 @@
     <%= f.label :bread_type_id, :id => "bread" %><br />
     <%= f.collection_radio_buttons(:bread_type_id, BreadType.order("name"), :id, :name)%>    
   </div>
+  
+  
    
   <div class="spread">
-    <%= f.label :spread_id, :id => "labelspread" %><br /> 
+    <%= f.label :spread_id %><br /> 
     <% Spread.all.each do |spread| %> 
-        <%= check_box_tag "order_page[spread_ids][]", spread.id, f.object.spreads_ids.include?(spread.id)%>
+        <%= check_box_tag "order_page[spread_ids][]", spread.id, f.object.spread_ids.include?(spread.id)%>
         <%= spread.name %>
     <% end %>      
   </div>
   
   <div class="vegetable">
-    <%= f.label :vegetable_id %><br /> 
+    <%= f.label :vegetable_id  %><br /> 
     <% Vegetable.all.each do |vegetable| %> 
         <%= check_box_tag "order_page[vegetable_ids][]", vegetable.id, f.object.vegetable_ids.include?(vegetable.id)%>
         <%= vegetable.name %>
     <% end %>      
   </div>
+  
+  
+  
   
   <div class="sauce">
     <%= f.label :sauce_id, :id => "labelsauce" %><br /> 
