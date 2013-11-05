@@ -5,8 +5,8 @@ $(document).ready(function(){
   });   
 });  
 
-$(document).on("click", "input[name=spread]", function(e) {
-   var num_checked = $("input[name=spread]:checked").length;
+$(document).on("click", "input[id=order_page_spread_ids_]", function(e) {
+   var num_checked = $("input[id=order_page_spread_ids_]:checked").length;
    if (num_checked > 1) {
      alert("sorry, you have already selected 1 spread!, max only 1");        
      $(e.target).prop('checked', false);
