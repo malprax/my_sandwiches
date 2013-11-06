@@ -31,14 +31,14 @@
           <tr>
             <td><%= i+1 %></td>        
             <td><%= order_page.created_at.strftime('%d %b, %Y') %></td>
-            <td></td>        
+            <td><%= order_page.user.email if order_page.user%></td>        
             <td><%= order_page.pickuptime.pickuptime %></td>
             <td><%= order_page.order_quantity %></td>
             <td><%= order_page.bread_type.name%></td>
             <td><%= order_page.sandwich_type == false ? "Standar" : "Own" %></td>
-            <td><%= order_page.spread.name%></td>
-            <td><%= order_page.vegetable.name %></td>
-            <td><%= order_page.sauce.name %></td>
+            <td><%= order_page.spreads.map(&:name).to_sentence %>  </td>
+            <td><%= order_page.vegetables.map(&:name).to_sentence  %></td>
+            <td><%= order_page.sauces.map(&:name).to_sentence%></td>
             <td>cost </td>
             <td><%= link_to 'Show', order_page %></td>
             <td><%= link_to 'Edit', edit_order_page_path(order_page) %></td>

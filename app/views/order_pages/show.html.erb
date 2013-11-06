@@ -5,7 +5,7 @@
 
       <p><strong>Date: </strong><%=  Time.now.strftime(' %B %d, %Y')%></p>
   
-      <p><strong>User:<%#= @order_page.user.email if @order_page.user  %></strong></p>  
+      <p><strong>User: </strong> <%= @order_page.user.email if @order_page.user  %></p>  
   
       <p><strong>Order quantity: </strong><%= @order_page.order_quantity %></p>
 
