@@ -63,6 +63,7 @@ gem 'activerecord-deprecated_finders'
 gem 'cancan'
 gem "bootstrap-wysihtml5-rails", "~> 0.3.1.23"
 gem 'dalli'
+gem 'memcachier'
 
 
 
