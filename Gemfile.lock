@@ -7,6 +7,13 @@ GIT
       activemodel (>= 4.0.0, < 4.1)
 
 GIT
+  remote: git://github.com/rweng/jquery-datatables-rails.git
+  revision: 2d750531a1e950c879d56c6a16d644f9974dd603
+  specs:
+    jquery-datatables-rails (1.11.2)
+      jquery-rails
+
+GIT
   remote: git://github.com/seyhunak/twitter-bootstrap-rails.git
   revision: 8fd0cc8b5b68165c7336feeb98ca0b622bf92bfb
   specs:
@@ -67,6 +74,7 @@ GEM
     coffee-script-source (1.6.3)
     commonjs (0.2.7)
     country_select (1.2.0)
+    dalli (2.6.4)
     devise (3.1.1)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.1)
@@ -86,6 +94,8 @@ GEM
     jquery-turbolinks (2.0.1)
       railties (>= 3.1.0)
       turbolinks
+    jquery-ui-rails (4.1.0)
+      railties (>= 3.1.0)
     json (1.8.0)
     less (2.4.0)
       commonjs (~> 0.2.7)
@@ -191,10 +201,13 @@ DEPENDENCIES
   carrierwave
   coffee-rails (~> 4.0.0)
   country_select
+  dalli
   devise
   jbuilder (~> 1.2)
+  jquery-datatables-rails!
   jquery-rails
   jquery-turbolinks
+  jquery-ui-rails
   less-rails
   pg
   protected_attributes

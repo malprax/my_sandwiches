@@ -14,6 +14,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery.turbolinks
+//= require dataTables/jquery.dataTables
 //= require twitter/bootstrap
 //= require order
 //= require editor

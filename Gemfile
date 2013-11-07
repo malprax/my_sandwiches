@@ -22,7 +22,8 @@ gem 'coffee-rails', '~> 4.0.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
-
+gem 'jquery-datatables-rails', github: 'rweng/jquery-datatables-rails'
+gem 'jquery-ui-rails'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'  
@@ -61,6 +62,7 @@ gem 'activerecord-deprecated_finders'
 
 gem 'cancan'
 gem "bootstrap-wysihtml5-rails", "~> 0.3.1.23"
+gem 'dalli'
 
 
 

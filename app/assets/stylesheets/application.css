@@ -10,8 +10,12 @@
  *
 
  *= require_self
+ *= require jquery.ui.core
+ *= require jquery.ui.theme
  *= require bootstrap_and_overrides
  *= flaty
+ *= require dataTables/jquery.dataTables
+ *= require dataTables/src/demo_table_jui
  *= require bootstrap-wysihtml5
  *= require_tree .
  */
