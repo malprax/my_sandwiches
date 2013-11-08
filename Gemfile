@@ -65,6 +65,8 @@ gem "bootstrap-wysihtml5-rails", "~> 0.3.1.23"
 gem 'dalli'
 gem 'memcachier'
 
+gem 'mailchimp-api', require: 'mailchimp'
+
 
 
 # Use ActiveModel has_secure_password
