@@ -2,6 +2,7 @@ class OrderPagesController < ApplicationController
   load_and_authorize_resource
   before_action :authenticate_user!
   before_action :set_order_page, only: [:show, :edit, :update, :destroy]
+  # caches_page :index
 
   # GET /order_pages
   # GET /order_pages.json
@@ -49,6 +50,7 @@ class OrderPagesController < ApplicationController
   # PATCH/PUT /order_pages/1
   # PATCH/PUT /order_pages/1.json
   def update
+    expire_page :action => index
     respond_to do |format|
       if @order_page.update(order_page_params)
         format.html { redirect_to order_page_path, notice: 'Order page was successfully updated.' }
