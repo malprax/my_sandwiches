@@ -1,7 +1,7 @@
 
 <div class="container-fluid">
   <div class="span12">
-    <h3>Order List</h3>
+    <h3>Order List <%= Time.now.strftime('%d %b, %Y') %></h3>
 
 
 
@@ -9,7 +9,7 @@
       <thead>
         <tr>
           <th>No</th>  
-          <th>Date</th>
+          <!-- <th>Date</th> -->
           <th>User</th>
           <th>P.Time</th>
           <th>Qty</th>
@@ -18,7 +18,8 @@
           <th>Spreads</th>      
           <th>Vegetables</th>
           <th>Sauce</th>
-          <th>Cost</th>          
+          <th>Cost</th>
+          <th>Comment</th>          
           <th></th>
           <th></th>
         </tr>
@@ -31,7 +32,7 @@
           <% @order_pages.each_with_index do |order_page, i| %>
             <tr>
               <td><%= i+1 %></td>        
-              <td><%= order_page.created_at.strftime('%d %b, %Y') %></td>
+              <!-- <td><%= order_page.created_at.strftime('%d %b, %Y') %></td> -->
               <td><%= order_page.user.email if order_page.user%></td>        
               <td><%= order_page.pickuptime.pickuptime %></td>
               <td><%= order_page.order_quantity %></td>
@@ -40,9 +41,10 @@
               <td><%= order_page.spreads.map(&:name).to_sentence %>  </td>
               <td><%= order_page.vegetables.map(&:name).to_sentence  %></td>
               <td><%= order_page.sauces.map(&:name).to_sentence%></td>
-              <td>cost </td>              
+              <td>cost </td> 
+              <td><%= order_page.comment %></td>             
               <td><%= link_to 'Edit', edit_order_page_path(order_page) %></td>
-              <td><%= link_to 'Done', order_page, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+              <td><%= link_to 'Delete', order_page, method: :delete, data: { confirm: 'Are you sure?' } %></td>
             </tr>
           <%end %>        
         <% end %>
